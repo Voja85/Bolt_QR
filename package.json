@@ -1,0 +1,11 @@
+{
+  "name": "bolt-qr",
+  "version": "0.0.1",
+  "scripts": {
+    "sass-watch": "node-sass -w resources/scss/ -o assets/css/",
+    "sass-build": "node-sass resources/scss/ -o assets/css/"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
