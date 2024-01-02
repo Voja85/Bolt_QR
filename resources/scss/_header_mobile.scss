@@ -17,18 +17,47 @@
     border: 1px solid red; /* ovo je dodat color cisto radi pracenja okvira Logo slike, BICE IZBRISAN KADA UBACIM SLIKU*/
 }
 
-.navbar-section {
+.navbar {
+
+&-section {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     float: right;
 }
 
-.navbar-images {
+&-images {
     width: 24px;
     height: 24px;
     margin-top: 16px;
     margin-right: 6px;
+}
+
+&-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: $bckhome;
+    width: 187px;
+    height: 595px;
+    margin-top: 59px;
+    left: 172px;
+    list-style: none;
+}
+
+&-links-items {
+    width: 22.05px;
+    height: 21.92px;
+    border-radius: 2px;
+    margin-right: 30px;
+    float: right;
+    
+}
+
+
+
+
+
 }
 
 .hamburger-bar {
@@ -42,39 +71,31 @@
     display: none;
 }
 
-.navbar-links {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: $bckhome;
-    width: 187px;
-    height: 595px;
-    margin-top: 59px;
-    left: 172px;
-    list-style: none;
-}
+.nav-item {
+    margin-top: 50px;
+    margin-left: 15px;
 
-.navbar-links-items {
-    width: 22.05px;
-    height: 21.92px;
-    border-radius: 2px;
-    margin-right: 30px;
-    float: right;
-    
-}
-
-.nav-item_1 {
+&_1 {
     margin-top: 40px;
     margin-left: 15px;
 }
-.nav-item_2 {
+
+&_2 {
     margin-top: 100px;
     margin-left: 15px;
 }
 
-.nav-item {
+&_4 {
     margin-top: 50px;
     margin-left: 15px;
+    width: 117px;
+    height: 47px;
+    border: 2px solid $button;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 5%;
+}
+
 }
 
 .nav-link {
@@ -84,29 +105,18 @@
     font-size: 18px;
     line-height: 21.87px;
     font-weight: 400;
-}
 
-.nav-link_3 {
+&_3 {
     color: $button;
     font-size: 18px;
     line-height: 21.87px;
     font-weight: 400;
 }
 
-.nav-link_4 {
+&_4 {
     color: $formstext;
     font-size: 18px;
     line-height: 21.87px;
     font-weight: 400;
 }
-
-.nav-item_4 {
-    margin-top: 50px;
-    margin-left: 15px;
-    width: 117px;
-    height: 47px;
-    border: 2px solid $button;
-    border-radius: 15px;
-    text-align: center;
-    padding-top: 5%;
 }
