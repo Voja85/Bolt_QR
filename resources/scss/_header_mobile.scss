@@ -6,7 +6,7 @@
     height: 60px;
     background-color: $bckhome;
     box-shadow:  0 10px 16px 0 rgba(255, 120, 0, 0.2);
-    border: 1px solid green;
+    border: 1px solid green; /* ovo je dodat color cisto radi pracenja okvira Logo slike, BICE IZBRISAN KADA UBACIM SLIKU*/
 }
 
 .logo {
@@ -18,7 +18,7 @@
 }
 
 .navbar {
-
+    
 &-section {
     list-style-type: none;
     display: flex;
@@ -53,11 +53,6 @@
     float: right;
     
 }
-
-
-
-
-
 }
 
 .hamburger-bar {
@@ -95,7 +90,6 @@
     text-align: center;
     padding-top: 5%;
 }
-
 }
 
 .nav-link {
