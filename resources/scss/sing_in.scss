@@ -8,3 +8,22 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: comfortaa;
+    src:url(/resources/scss/Comfortaa/Comfortaa-Regular.ttf);
+}
+
+.section-container {
+    width: 360px;
+    height: 667px;
+    background: rgba(255, 207, 155, 0.1);
+    border: 1px solid green; 
+}
+
+.heading {  
+    font-family: comfortaa;
+    color: rgba(255, 120, 0, 1);
+    font-size: 34.18px;
+    line-height: 41.53px;
+    font-weight: 900;
+}
