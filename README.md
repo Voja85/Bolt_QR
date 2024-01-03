@@ -24,6 +24,8 @@ On initial setup first run `npm install`, then `npm run sass-build`, and if deve
 
 When you create new scss file, run `npm run sass-build` and then `npm run sass-watch` to let system continue to watch your changes.
 
+Any fonts and images should be stored to `/resources/fonts` and `/resources/media` folders, and after any change in those folders command `npm run sass-build` must be called. Command will copy content on those to folders into `/assets/fonts` and `/assets/img` folders.
+
 BESIDE THIS COMMANDS THAT YOU WILL USE IN COMMAND TERMINAL IN ROOT OF THIS PROJECT, 
 DO NOT USE ANY EXTERNAL TOOL FOR SCSS!!!!
 

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "sass-watch": "node-sass -w resources/scss/ -o assets/css/",
-    "sass-build": "node-sass resources/scss/ -o assets/css/"
+    "sass-build": "node-sass resources/scss/ -o assets/css/; cp -r ./resources/fonts/. ./assets/fonts; cp -r ./resources/media/. ./assets/img;"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
