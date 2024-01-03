@@ -1,0 +1,92 @@
+.footer {
+    &-container {
+        width: 360px;
+        height: 757.15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: (250, 250, 250, 1);
+}
+
+    &-logo {
+        width: 98.84px;
+        height: 26.13px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+}
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+
+    &-link {
+        width: 34.02px;
+        height: 34.02px;
+        padding: 0 5px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+}
+
+    &-mix {
+        margin-bottom: 50px;
+}
+
+    &-text-link {
+        font-family: Taraba Comfortaa;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 11px;
+        letter-spacing: 0em;
+        color:$footerblack;
+        text-align: center;
+        margin-bottom: 30px;
+}
+
+    &-line {
+        width: 278px;
+        border: 1px solid rgba(138, 138, 138, 1);
+        margin-top: 40px;
+        margin-bottom: 30px;
+}
+
+    &-item {
+        width: 34.02px;
+        height: 34.02px;
+        border-radius: 10px;
+}
+
+    &-copyright {
+        width: 278px;
+        height: 28px;
+        font-size: 10px;
+        font-weight: 300;
+        margin-left: -20px;
+        margin-right: -20px;
+        text-align: center;
+        color: rgba(102, 102, 102, 1);
+        margin-top: 30px;
+}
+}
+
+.footer-text {
+
+    &-links {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        color: $footertext;
+        text-align: center;
+        text-decoration: underline;
+}
+
+    &-linked {
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+}
+
+
