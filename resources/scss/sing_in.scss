@@ -1,7 +1,7 @@
 @import "_variable";
 @import "_base";
-@import "_header_mobile";
-@import "_footer_mobile";
+@import "_header";
+@import "_footer";
 
 * {
     margin: 0;
@@ -9,9 +9,14 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Taraba Comfortaa;
-    src: url(../fonts/Comfortaa/Comfortaa-Regular.ttf) /* UVEK RELATIOVNOM PUTANJOM DEFINISATI ASSETE (FONTOVE ILI SLIKE)*/
+@font-face {                                        /*proveriti zasto ne finkcionise, ovo je poslednje probana varijanta */
+    font-family:  'Comfortaa', sans-serif;
+    src: url('../fonts/Comfortaa/Comfortaa-Bold.ttf') format(truetype),
+         url('../fonts/Comfortaa/Comfortaa-Light.ttf') format(truetype),
+         url('../fonts/Comfortaa/Comfortaa-Medium.ttf') format(truetype),
+         url('../fonts/Comfortaa/Comfortaa-Regular.ttf') format(truetype),
+         url('../fonts/Comfortaa/Comfortaa-SemiBold.ttf') format(truetype),
+         url('../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf') format(truetype);
 }
 
 .section {
@@ -22,13 +27,13 @@
 }
 
     &-heading {  
-        font-family: Taraba Comfortaa;
+        font-family: 'Comfortaa'; 
         color: $headtext;
         font-size: 34.18px;
         line-height: 41.53px;
-        font-weight: 900;
         padding-top: 50px;
         margin-left: 8px;
+        font-weight: 900;
 }
 
     &-heading-text { 
@@ -52,7 +57,7 @@
         height: 56px;
         margin-top: 20px;
         margin-left: 9px;
-        font-family: Taraba Comfortaa;
+        font-family: 'Comfortaa';
         font-size: 14px;
         font-weight: 400;
         line-height: 17.01px;
@@ -87,14 +92,15 @@ input[type=text] {
     margin-top: 15px;
     margin-left: 8px;
     padding-left: 17px;
+    font-family: 'Comfortaa';
 }
 
 input[type=checkbox] {
     width: 25px;
-    height: 25px;
+    height: 25px ;
     margin-left: 9px;
-    border-color: 2px solid $formstext;
-    border-radius: 5px;
+    margin-top: 2px;
+    background: rgba(255, 207, 155, 1);
 }
 
 .checkbox-text {
@@ -109,7 +115,9 @@ input[type=checkbox] {
     text-align: left;
     letter-spacing: 0em;
     margin-left: 5px;
+    
 }
+
 
 
 
