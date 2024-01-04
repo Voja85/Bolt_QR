@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Bolt_QR</title>
-    <meta name="description" content=""> 
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="QR code, sing in"> 
-    <link rel="stylesheet" href="../assets/css/sing_in.css"> 
+    <meta name="keywords" content="QR code, sing in">
+    <link rel="stylesheet" href="../assets/css/sing_in.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -15,7 +16,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img class="logo" src="../assets/img/footer/bolt-logo.svg" alt="logo Bolt."><!-- zbog vizuelne orjentacije, znaci mi u pocetku -->
+            <img class="logo" src="../assets/img/footer/bolt-logo.svg" alt="logo Bolt.">
             <nav>
                 <div>
                     <ul class="navbar-section">
@@ -23,7 +24,7 @@
                             <img class="navbar-images" src="../assets/img/home/theme-icon.svg" alt="slika">
                         </li>
                         <li><a href="javascript:" class="hamburger-bar" onclick="humburger()">
-                            <img class="hamburger-bar" src="../assets/img/home/menu-icon.svg" alt="h">
+                                <img class="hamburger-bar" src="../assets/img/home/menu-icon.svg" alt="h">
                             </a>
                         </li>
                     </ul>
@@ -31,11 +32,12 @@
                 <div>
                     <ul class="navbar-links" id="nav-links">
                         <li class="nav-item_1">
-                            <a href="javascript:;" class="nav-link"><img class="navbar-links-items" src="../resources/Images/images.png" alt="macka"></a> 
+                            <a href="javascript:;" class="nav-link"><img class="navbar-links-items"
+                                    src="../resources/Images/images.png" alt="macka"></a>
                         </li>
-                        
+
                         <li class="nav-item_2">
-                            <a href="javascript:;" class="nav-link">Generate<br>QR Codes</a> 
+                            <a href="javascript:;" class="nav-link">Generate<br>QR Codes</a>
                         </li>
 
                         <li class="nav-item">
@@ -54,67 +56,78 @@
         </div>
     </header>
 
+    <main>
         <section class="section-container">
             <p class="section-heading">Sign up.</p>
             <p class="section-heading-text">Welcome to Bolt account creation.<br>
-                                            Enjoy all the benefits it offers.</p>
+                Enjoy all the benefits it offers.</p>
             <form action="">
                 <input type="text" name="search" placeholder="Your name*">
                 <input type="text" name="search" placeholder="Your email*">
                 <input type="text" name="search" placeholder="Your password*">
             </form>
+
             <div class="section-checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox">
+
+                <label for="checkbox1"><img src="../assets/img/sign-up/chech-box.svg" alt=""></label>
+                <input type="checkbox" name="checkbox" id="checkbox1">
                 <p class="checkbox-text">Please confirm that you have read and
-                                         understood the Terms and Conditions and
-                                         Privacy Policy of the site.*</p>
+                    understood the Terms and Conditions and
+                    Privacy Policy of the site.*</p>
+
             </div>
             <button class="section-btn">Create account</button>
-            <p class="section-text">If you all ready have account, please <span class="section-text-login">Log in</span> </p>
+            <p class="section-text">If you all ready have account, please <span class="section-text-login">Log in</span>
+            </p>
         </section>
-
-        <footer>
-            <div class="footer-container">
-                <img class="footer-logo" src="../resources/Images/images.png" alt="logo_Bolt_footer"><!-- zbog vizuelne orjentacije, znaci mi u pocetku --> 
-                <div class="footer-links">
-                    <img class="footer-link" src="../resources/Images/images.png"  alt="logo_Bolt_footer">
-                    <img class="footer-link" src="../resources/Images/images.png"  alt="logo_Bolt_footer">
-                    <img class="footer-link" src="../resources/Images/images.png"  alt="logo_Bolt_footer">
-                    <img class="footer-link" src="../resources/Images/images.png"  alt="logo_Bolt_footer">
-                </div>
-
-                <div class="footer-mix">
-                    <p class="footer-text-link">Quick links</p>
-                    <p class="footer-text-links">Generate QR codes</p>
-                    <p class="footer-text-links">Pricing</p>
-                </div>
-
-                <div>
-                    <p class="footer-text-links">Terms & Conditions</p>
-                    <p class="footer-text-links">Privacy Policy</p>
-                </div>
-
-                <hr class="footer-line">
-
-                <p class="footer-text-linked">Our family</p>
-                <img class="footer-item" src="../resources/Images/images.png"  alt="taraba">
-                <img class="footer-item" src="../resources/Images/images.png"  alt="taraba-tech">
-                <img class="footer-item" src="../resources/Images/images.png"  alt="taraba_portal">
-                <img class="footer-item" src="../resources/Images/images.png"  alt="taraba_edu">
-                <img class="footer-item" src="../resources/Images/images.png"  alt="oakli">
-
-                <p class="footer-copyright">Copyright © 2019 - 2022 Taraba doo or it's affilliates. All rights reserved.</p>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img class="footer-logo" src="../assets/img/footer/bolt-logo.svg" alt="logo_Bolt_footer">
+            <div class="footer-links">
+                <img class="footer-link" src="../assets/img/footer/linked-in-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/instagram-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/you-tube-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/facebook-large.svg" alt="logo_Bolt_footer">
             </div>
-        </footer>
-        <script>
-            function humburger() {
-                 var x = document.getElementById("nav-links");
-                 if (x.style.display === "block") {
-                     x.style.display = "none";
-                 } else {
-                     x.style.display = "block";
-                 }
-             }
-         </script>
-    </body>
+
+            <div class="footer-mix">
+                <p class="footer-text-link">Quick links</p>
+                <p class="footer-text-links">Generate QR codes</p>
+                <p class="footer-text-links">Pricing</p>
+            </div>
+
+            <div>
+                <p class="footer-text-links">Terms & Conditions</p>
+                <p class="footer-text-links">Privacy Policy</p>
+            </div>
+
+            <hr class="footer-line">
+
+            <p class="footer-text-linked">Our family</p>
+            <img class="footer-item-logo" src="../assets/img/footer/taraba-logo-latin-full-color-white 1.svg"
+                alt="taraba-logo">
+            <img class="footer-item-tech" src="../assets/img/footer/trb-tech-logo-solid-white (1) 1.svg"
+                alt="taraba-tech">
+            <img class="footer-item-portal" src="../assets/img/footer/portal-logo-lat-solid-white 1.svg"
+                alt="taraba_portal">
+            <img class="footer-item-edu" src="../assets/img/footer/trb-edu-logo-solid-white.svg" alt="taraba_edu">
+            <img class="footer-item-oakli" src="../assets/img/footer/oakly-logo-full-color 9.svg" alt="oakli">
+
+            <p class="footer-copyright">Copyright © 2019 - 2022 Taraba doo or it's affilliates. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function humburger() {
+            var x = document.getElementById("nav-links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
 </html>

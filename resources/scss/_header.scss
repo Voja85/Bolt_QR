@@ -11,46 +11,48 @@
 .logo {
     width: 87px;
     height: 23px;
-    margin-top:19px;
+    margin-top: 19px;
     margin-left: 8px;
 }
 
 .navbar {
-    
-&-section {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    float: right;
-}
 
-&-images {
-    width: 24px;
-    height: 24px;
-    margin-top: 16px;
-    margin-right: 6px;
-}
+    &-section {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        float: right;
 
-&-links {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: $bckhome;
-    width: 187px;
-    height: 595px;
-    margin-top: 59px;
-    left: 172px;
-    list-style: none;
-}
+    }
 
-&-links-items {
-    width: 22.05px;
-    height: 21.92px;
-    border-radius: 2px;
-    margin-right: 30px;
-    float: right;
-    
-}
+    &-images {
+        width: 24px;
+        height: 24px;
+        margin-top: 16px;
+        margin-right: 6px;
+    }
+
+    &-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: $bckhome;
+        width: 187px;
+        height: 595px;
+        margin-top: 59px;
+        left: 172px;
+        list-style: none;
+        z-index: 3;
+    }
+
+    &-links-items {
+        width: 22.05px;
+        height: 21.92px;
+        border-radius: 2px;
+        margin-right: 30px;
+        float: right;
+
+    }
 }
 
 .hamburger-bar {
@@ -58,6 +60,7 @@
     height: 12px;
     margin-top: 22px;
     margin-right: 7px;
+    position: relative;
 }
 
 #nav-links {
@@ -68,27 +71,27 @@
     margin-top: 50px;
     margin-left: 15px;
 
-&_1 {
-    margin-top: 40px;
-    margin-left: 15px;
-}
+    &_1 {
+        margin-top: 40px;
+        margin-left: 15px;
+    }
 
-&_2 {
-    margin-top: 100px;
-    margin-left: 15px;
-}
+    &_2 {
+        margin-top: 100px;
+        margin-left: 15px;
+    }
 
-&_4 {
-    margin-top: 50px;
-    margin-left: 15px;
-    width: 117px;
-    height: 47px;
-    border: 2px solid $button;
-    border-radius: 15px;
-    text-align: center;
-    padding-top: 5%;
-    font-family: roboto;
-}
+    &_4 {
+        margin-top: 50px;
+        margin-left: 15px;
+        width: 117px;
+        height: 47px;
+        border: 2px solid $orange;
+        border-radius: 15px;
+        text-align: center;
+        padding-top: 5%;
+        font-family: roboto;
+    }
 }
 
 .nav-link {
@@ -98,18 +101,18 @@
     font-size: 18px;
     line-height: 21.87px;
     font-weight: 400;
-  
-&_3 {
-    color: $button;
-    font-size: 18px;
-    line-height: 21.87px;
-    font-weight: 400;
-}
 
-&_4 {
-    color: $formstext;
-    font-size: 18px;
-    line-height: 21.87px;
-    font-weight: 400;
-}
+    &_3 {
+        color: $orange;
+        font-size: 18px;
+        line-height: 21.87px;
+        font-weight: 400;
+    }
+
+    &_4 {
+        color: $formstext;
+        font-size: 18px;
+        line-height: 21.87px;
+        font-weight: 400;
+    }
 }
