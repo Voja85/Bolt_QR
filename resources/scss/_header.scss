@@ -70,6 +70,8 @@
 .nav-item {
     margin-top: 50px;
     margin-left: 15px;
+    font-family: 'TarabaComfortaa';
+    font-weight: 400;
 
     &_1 {
         margin-top: 40px;
@@ -79,6 +81,8 @@
     &_2 {
         margin-top: 100px;
         margin-left: 15px;
+        font-family: 'TarabaComfortaa';
+        font-weight: 400;
     }
 
     &_4 {
@@ -90,7 +94,8 @@
         border-radius: 15px;
         text-align: center;
         padding-top: 5%;
-        font-family: roboto;
+        font-family: 'TarabaComfortaa';
+        font-weight: 400;
     }
 }
 
@@ -115,4 +120,34 @@
         line-height: 21.87px;
         font-weight: 400;
     }
+}
+
+.rotation {
+    position: relative;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+.rotation-1 {
+    position: absolute;
+    border: 1px;
+    width: 27px;
+    height: 4px;
+    transform: rotate(45deg);
+    margin-left: 50px;
+    border-radius: 2px;
+    background: $darkgrey;
+}
+
+.rotation-2 {
+    position: absolute;
+    border: 1px;
+    width: 27px;
+    height: 4px;
+    transform: rotate(-45deg);
+    margin-left: 49px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    background: $darkgrey;
+    z-index: -1;
 }
