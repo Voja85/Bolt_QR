@@ -28,8 +28,8 @@
                 </div>
                 <div>
                     <ul class="navbar-links" id="nav-links">
-                        <li class="rotation" id="nav-links-back">
-                            <a href="javascript:;">
+                        <li class="rotation" id="nav-links-back" onclick="humburger()">
+                            <a href=" javascript:;" class="exit">
                                 <p class="rotation-1"></p>
                                 <p class="rotation-2"></p>
                             </a>
@@ -67,19 +67,18 @@
             </form>
 
             <div class="section-checkbox">
-
-                <label for="checkbox1"><img src="../assets/img/sign-up/chech-box.svg" alt=""></label>
-                <input type="checkbox" name="checkbox" id="checkbox1">
-                <p class="checkbox-text">Please confirm that you have read and
+                <label for="checkbox1" id="exec"><img src="../assets/img/sign-up/chech-box.svg" alt=""> </label>
+                <input type="checkbox" class="box" id="checkbox1">
+                <p class="checkbox-text" id="msgconf">Please confirm that you have read and
                     understood the Terms and Conditions and
                     Privacy Policy of the site.*</p>
-
             </div>
-            <button class="section-btn">Create account</button>
+            <button type="submit" id="reset" class="section-btn">Create account</button>
             <p class="section-text">If you all ready have account, please <span class="section-text-login">Log in</span>
             </p>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
             <img class="footer-logo" src="../assets/img/footer/bolt-logo.svg" alt="logo_Bolt_footer">
@@ -127,6 +126,7 @@
             }
         }
     </script>
+
 </body>
 
 

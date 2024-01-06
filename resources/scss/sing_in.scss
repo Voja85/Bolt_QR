@@ -38,6 +38,7 @@
     }
 
     &-checkbox {
+        height: 50px;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -94,9 +95,12 @@ input[type=checkbox] {
     width: 24.5px;
     height: 24.5px;
     margin-left: 0.25px;
-    /* glupo da nema gde, proveriti zasto borde-radius ne radi NAPOMENA ZA VOJU */
-    border-radius: 2px;
     z-index: -2;
+}
+
+input[type=checkbox]:checked {
+    background-color: yellow;
+
 }
 
 .checkbox-text {
@@ -113,3 +117,5 @@ input[type=checkbox] {
     margin-left: 5px;
     z-index: 0;
 }
+
+#checkbox1 {}

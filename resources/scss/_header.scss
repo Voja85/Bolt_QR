@@ -39,7 +39,7 @@
         background-color: $white;
         width: 187px;
         height: 595px;
-        margin-top: 59px;
+        margin-top: 0px;
         left: 172px;
         list-style: none;
         z-index: 3;
@@ -51,7 +51,6 @@
         border-radius: 2px;
         margin-right: 30px;
         float: right;
-
     }
 }
 
@@ -128,6 +127,7 @@
     margin-top: 30px;
 }
 
+
 .rotation-1 {
     position: absolute;
     border: 1px;
@@ -137,6 +137,7 @@
     margin-left: 50px;
     border-radius: 2px;
     background: $darkgrey;
+    cursor: pointer;
 }
 
 .rotation-2 {
@@ -149,5 +150,6 @@
     margin-bottom: 4px;
     border-radius: 2px;
     background: $darkgrey;
+    cursor: pointer;
     z-index: -1;
 }
