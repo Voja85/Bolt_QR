@@ -1,6 +1,6 @@
 .footer {
     &-container {
-        width: 360px;
+        width: 100%;
         height: 757.15px;
         display: flex;
         flex-direction: column;
@@ -11,37 +11,27 @@
     &-logo {
         width: 98.84px;
         height: 26.13px;
-        margin-top: 40px;
+        margin-top: 45px;
         margin-bottom: 20px;
     }
 
     &-links {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        height: 50px;
+        margin-bottom: 25px;
     }
 
     &-link {
-        width: 34.02px;
-        height: 34.02px;
+        width: 44.02px;
+        height: 44.02px;
         padding: 0 5px;
         border-radius: 10px;
         margin-bottom: 40px;
     }
 
     &-mix {
-        margin-bottom: 50px;
-    }
-
-    &-text-link {
-        font-family: Taraba Comfortaa;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 11px;
-        letter-spacing: 0em;
-        color: $darkgrey;
-        text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     &-line {
@@ -49,7 +39,7 @@
         border: 1px solid $grey;
         background-color: $grey;
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     &-item-logo {
@@ -83,32 +73,47 @@
     }
 
     &-copyright {
+        font-family: 'Roboto';
         width: 278px;
         height: 28px;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 300;
-        margin-left: -20px;
-        margin-right: -20px;
         text-align: center;
         color: $lightgrey;
-        margin-top: 30px;
+        margin-top: 35px;
     }
 }
 
 .footer-text {
 
+    &-link {
+        font-family: 'TarabaComfortaa';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 11px;
+        letter-spacing: 0em;
+        color: $darkgrey;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
     &-links {
-        font-family: Roboto;
+        font-family: 'Roboto';
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
-        letter-spacing: 0em;
         color: $ocher;
         text-align: center;
         text-decoration: underline;
     }
 
     &-linked {
+        height: 19px;
+        font-family: 'TarabaComfortaa';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.44px;
+        color: $darkgrey;
         margin-top: 20px;
         margin-bottom: 20px;
     }
