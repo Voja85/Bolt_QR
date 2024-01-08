@@ -69,14 +69,39 @@
         cursor: pointer;
     }
 
+    /*ovo je za potrebe log_in.html*/
+    &-btn-log {
+        width: 198px;
+        height: 56px;
+        margin-top: -10px;
+        margin-left: 9px;
+        font-family: 'TarabaComfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.01px;
+        letter-spacing: 0em;
+        border-radius: 15px;
+        color: $white;
+        background-color: $orange;
+        border: $darkorange;
+        box-shadow: -2px -2px 10px 5px $darkorange inset;
+        cursor: pointer;
+    }
+
+
     &-text {
         margin-top: 30px;
         margin-left: 8px;
     }
 
+    /*ovo je za potrebe log_in.html*/
     &-text-login {
         color: $orange;
         text-decoration: underline;
+        font-family: 'TarabaComfortaa';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17.01px;
     }
 }
 
@@ -93,6 +118,24 @@ input[type=text] {
     margin-left: 8px;
     padding-left: 17px;
     font-family: 'TarabaComfortaa';
+}
+
+/*ovo je za potrebe log_in.html*/
+input::placeholder {
+    color: $darkgrey;
+    font-family: 'TarabaComfortaa';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17.01px;
+}
+
+/*ovo je za potrebe log_in.html*/
+input::-moz-placeholder {
+    color: $darkgrey;
+    font-family: 'TarabaComfortaa';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17.01px;
 }
 
 input[type=checkbox] {
@@ -116,4 +159,28 @@ input[type=checkbox] {
     letter-spacing: 0em;
     margin-left: 5px;
     z-index: 0;
+}
+
+/*ubaciti u sing_in.scss*/
+
+.checkbox-text-desc {
+    margin-top: 4px;
+    padding-left: 5px;
+}
+
+.section-links {
+    margin-left: 8px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.section-links a {
+    font-family: 'TarabaComfortaa';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: $orange;
+    padding-right: 20px;
+
 }
