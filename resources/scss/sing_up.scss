@@ -214,3 +214,29 @@ input[type=checkbox] {
     padding-top: 42px;
     padding-left: 8px;
 }
+
+.section-btn-empty {
+    width: 198px;
+    height: 56px;
+    margin-top: 15px;
+    margin-left: 9px;
+    font-family: 'TarabaComfortaa';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.01px;
+    letter-spacing: 0em;
+    border-radius: 15px;
+    background-color: $light_greywhite;
+    color: $darkgrey;
+    border: 2px solid $darkorange;
+    cursor: pointer;
+}
+
+.central img {
+    width: 217px;
+    height: 217px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
