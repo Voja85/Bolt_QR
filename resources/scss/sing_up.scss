@@ -205,3 +205,12 @@ input[type=checkbox] {
     margin-left: 0.25px;
     z-index: -2;
 }
+
+/* home page scss - videti da li da se formira zaseban scss, ako ne ugraditi u postojeci*/
+
+.section-container-first {
+    width: 100%;
+    background-color: $light_greywhite;
+    padding-top: 42px;
+    padding-left: 8px;
+}

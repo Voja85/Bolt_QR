@@ -1,5 +1,5 @@
 p {
-    font-family: Roboto;
+    font-family: 'Roboto';
     color: $lightgrey;
     font-size: 14px;
     font-weight: 400;
@@ -7,9 +7,18 @@ p {
 }
 
 .hero {
+    font-family: 'TarabaComfortaa';
     font-size: 53.41px;
     line-height: 64.89px;
     color: $orange;
+    font-weight: 900;
+}
+
+.hero-black {
+    font-family: 'TarabaComfortaa';
+    font-size: 53.41px;
+    line-height: 64.89px;
+    color: $black;
     font-weight: 900;
 }
 

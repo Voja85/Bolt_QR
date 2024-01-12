@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bolt_QR_sing_up</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="QR code, sing in">
+    <link rel="stylesheet" href="../assets/css/sing_up.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="../assets/img/footer/bolt-logo.svg" alt="logo Bolt.">
+            <nav>
+                <div>
+                    <ul class="navbar-section">
+                        <li>
+                            <img class="navbar-images" src="../assets/img/home/theme-icon.svg" alt="slika">
+                        </li>
+                        <li><a href="javascript:" class="hamburger-bar" onclick="humburger()">
+                                <img class="hamburger-bar" src="../assets/img/home/menu-icon.svg" alt="h">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-links" id="nav-links">
+                        <li class="rotation" id="nav-links-back" onclick="humburger()">
+                            <a href=" javascript:;" class="exit">
+                                <p class="rotation-1"></p>
+                                <p class="rotation-2"></p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item_2">
+                            <a href="javascript:;" class="nav-link">Generate<br>QR Codes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link_3">Log in</a>
+                        </li>
+                        <li class="nav-item_4">
+                            <a href="javascript:;" class="nav-link_4">Sing up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-container-first">
+            <p class="hero">Strikingly fast<span class="hero-black"> QR</span><br><span
+                    class="hero-black">codes.<span><br></p>
+            <p class="section-heading-text">Welcome to Bolt account creation.<br>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <img class="footer-logo" src="../assets/img/footer/bolt-logo.svg" alt="logo_Bolt_footer">
+            <div class="footer-links">
+                <img class="footer-link" src="../assets/img/footer/linked-in-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/instagram-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/you-tube-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/facebook-large.svg" alt="logo_Bolt_footer">
+            </div>
+
+            <div class="footer-mix">
+                <p class="footer-text-link">Quick links</p>
+                <p class="footer-text-links">Generate QR codes</p>
+                <p class="footer-text-links">Pricing</p>
+            </div>
+
+            <div>
+                <p class="footer-text-links">Terms & Conditions</p>
+                <p class="footer-text-links">Privacy Policy</p>
+            </div>
+
+            <hr class="footer-line">
+
+            <p class="footer-text-linked">Our family</p>
+            <img class="footer-item-logo" src="../assets/img/footer/taraba-logo-latin-full-color-white 1.svg"
+                alt="taraba-logo">
+            <img class="footer-item-tech" src="../assets/img/footer/trb-tech-logo-solid-white (1) 1.svg"
+                alt="taraba-tech">
+            <img class="footer-item-portal" src="../assets/img/footer/portal-logo-lat-solid-white 1.svg"
+                alt="taraba_portal">
+            <img class="footer-item-edu" src="../assets/img/footer/trb-edu-logo-solid-white.svg" alt="taraba_edu">
+            <img class="footer-item-oakli" src="../assets/img/footer/oakly-logo-full-color 9.svg" alt="oakli">
+
+            <p class="footer-copyright">Copyright © 2019 - 2022 Taraba doo or it's affilliates. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function humburger() {
+            var x = document.getElementById("nav-links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+
+</body>
+
+
+</html>
