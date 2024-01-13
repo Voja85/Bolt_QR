@@ -314,17 +314,135 @@ input[type=checkbox] {
     font-size: 20px;
 }
 
-.content-item p:first-of-type {
-    margin-left: 17px;
-    margin-bottom: 4px;
-}
-
 .content-item p {
     width: 250px;
     margin-left: 28px;
 }
 
 .container-third {
-    height: 3758px;
+    height: 2900px;
     background-color: $light_greywhite;
+    padding-top: 30px;
+    padding-left: 8px;
+    width: 100%;
+}
+
+.subtitle {
+    width: 327px;
+    margin-bottom: 20px;
+}
+
+.boxes-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    height: 188px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightwhite;
+    box-shadow: 0px 20px 5px -15px rgba(145, 60, 0, 0.25);
+    ;
+}
+
+.box-title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    width: 58px;
+    height: 21px;
+    justify-content: center;
+}
+
+.box-title img {
+    width: 16px;
+    height: 16px;
+}
+
+.link-text {
+    height: 21px;
+    font-family: 'TarabaComfortaa';
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $darkorange;
+    margin-left: 10px;
+}
+
+
+.box-text {
+    width: 188px;
+    height: 32;
+    margin-top: 10px;
+    text-align: left;
+    color: $darkgrey;
+}
+
+.box-text-phone {
+    width: 188px;
+    height: 32;
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: left;
+    color: $darkgrey;
+}
+
+.box-text-sms {
+    width: 186px;
+    height: 32;
+    margin-top: 10px;
+    text-align: left;
+    color: $darkgrey;
+}
+
+.box-text-email {
+    width: 192px;
+    height: 32;
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: left;
+    color: $darkgrey;
+}
+
+.box-text-whatsapp {
+    width: 146px;
+    height: 48;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    color: $darkgrey;
+}
+
+.box-text-facetime {
+    width: 192px;
+    height: 32;
+    margin-top: 10px;
+    text-align: left;
+    color: $darkgrey;
+}
+
+.box-text-location {
+    width: 175px;
+    height: 48;
+    margin-top: 10px;
+    text-align: left;
+    color: $darkgrey;
+}
+
+.box-text-paypal {
+    width: 135px;
+    height: 32;
+    margin-top: 10px;
+    text-align: left;
+    color: $darkgrey;
 }
