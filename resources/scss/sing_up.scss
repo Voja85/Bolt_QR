@@ -442,8 +442,9 @@ input[type=checkbox] {
 
 .container-fourth {
     width: 100%;
-    height: 950px;
+    height: auto;
     background-color: $greywhite30;
+    padding-bottom: 20px;
 }
 
 .heading-title-main {
@@ -501,7 +502,46 @@ input[type=checkbox] {
 }
 
 .swiper-container {
+    position: relative;
     width: 100%;
+}
+
+.swiper-container-box {
+    position: absolute;
+    width: 190px;
+    height: 62px;
+    top: -35px;
+    background: linear-gradient(180deg, rgba(255, 183, 105, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    border-radius: 15px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    z-index: -1;
+}
+
+.swiper-container-box p {
+
+    font-family: 'TarabaComfortaa';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $lightgrey;
+}
+
+.swiper-slide-main {
+    margin: auto;
+    margin-top: 30px;
+    width: 226px;
+    height: 502px;
+    border-radius: 15px;
+    background: linear-gradient($lightocher1 17.19%, $lightwhite 100%);
+    padding-left: 25px;
+    padding-top: 40px;
+    z-index: 1;
 }
 
 .swiper-slide {
@@ -509,20 +549,31 @@ input[type=checkbox] {
     width: 226px;
     height: 502px;
     border-radius: 15px;
-    background: linear-gradient($lightocher1 17.19%, $lightwhite 100%);
+    background: linear-gradient(167.91deg, rgba(255, 214, 196, 1) -1.62%, rgba(255, 255, 255, 1) 104.93%);
     padding-left: 25px;
-    padding-top: 35px;
+    padding-top: 40px;
+}
+
+.swiper-slide-main hr {
+    width: 162px;
+    border: 3px solid $white;
+    margin-bottom: 15px;
+}
+
+.swiper-slide hr {
+    width: 162px;
+    border: 1px solid $lightgreyline;
+    margin-bottom: 15px;
 }
 
 .swiper-slide-title {
     font-family: 'TarabaComfortaa';
+    color: $darkgrey;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
-    text-decoration: underline 3px solid $white;
-    margin-bottom: 15px;
 }
 
 .swiper-text {
@@ -543,7 +594,7 @@ input[type=checkbox] {
     margin-left: -10px;
     width: 198px;
     height: 47px;
-    margin-top: 25px;
+    margin-top: 30px;
     font-family: 'TarabaComfortaa';
     font-size: 14px;
     font-weight: 400;
@@ -553,6 +604,6 @@ input[type=checkbox] {
     color: $white;
     background-color: $orange;
     border: $darkorange;
-    box-shadow: 2px 20px 5px -15px rgba(145, 60, 0, 0.25);
+    box-shadow: 2px 25px 6px -15px rgba(145, 60, 0, 0.25);
     cursor: pointer;
 }

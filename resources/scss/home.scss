@@ -3,3 +3,444 @@
 @import "_header";
 @import "_footer";
 @import "fonts";
+
+
+.section {
+
+    &-heading-text {
+        font-family: 'Roboto';
+        color: $lightgrey;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 16.41px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+    }
+
+    &-btn {
+        width: 198px;
+        height: 56px;
+        margin-top: 15px;
+        margin-left: 9px;
+        font-family: 'TarabaComfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.01px;
+        letter-spacing: 0em;
+        border-radius: 15px;
+        color: $white;
+        background-color: $orange;
+        border: $darkorange;
+        box-shadow: -2px -2px 10px 0px $darkorange inset;
+        cursor: pointer;
+
+        &-empty {
+            width: 198px;
+            height: 56px;
+            margin-top: 15px;
+            margin-left: 9px;
+            font-family: 'TarabaComfortaa';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.01px;
+            letter-spacing: 0em;
+            border-radius: 15px;
+            background-color: $light_greywhite;
+            color: $darkgrey;
+            border: 2px solid $darkorange;
+            cursor: pointer;
+        }
+    }
+
+    &-container-first {
+        width: 100%;
+        background-color: $light_greywhite;
+        padding-top: 42px;
+        padding-left: 8px
+    }
+}
+
+.central img {
+    width: 217px;
+    height: 217px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.heading-title {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-items: baseline;
+
+    & img {
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+    }
+
+    &-main {
+        font-size: 34.18px;
+        line-height: 41.53px;
+        font-weight: 900;
+        color: $darkgrey;
+        font-family: 'TarabaComfortaa';
+        margin-left: 9px;
+        padding-top: 20px;
+    }
+}
+
+.content {
+    display: flex;
+    margin-top: 10px;
+
+    & img {
+        margin-right: 10px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+    }
+
+    &-first {
+        display: flex;
+        margin-top: 20px;
+
+        & img {
+            margin-right: 10px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+        & img {
+            padding-left: 10px;
+            width: 30px;
+            height: 35px;
+            margin-bottom: -20px;
+            font-size: 20px;
+        }
+
+        & p {
+            width: 250px;
+            margin-left: 28px;
+        }
+    }
+}
+
+.screen {
+    width: 344px;
+    height: 205px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container {
+
+    &-second {
+        background-color: $lightocher;
+        padding-top: 30px;
+        padding-left: 4px;
+        height: 893px;
+
+        & p:nth-child(2) {
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+    &-third {
+        height: 2900px;
+        background-color: $light_greywhite;
+        padding-top: 30px;
+        padding-left: 8px;
+        width: 100%;
+    }
+
+    &-fourth {
+        width: 100%;
+        height: auto;
+        background-color: $greywhite30;
+        padding-bottom: 20px;
+
+        &-btn {
+            width: 104px;
+            height: 36px;
+            margin-top: 15px;
+            margin-left: 10px;
+            font-family: 'TarabaComfortaa';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.01px;
+            letter-spacing: 0em;
+            border-radius: 15px;
+            color: $white;
+            border: 1px solid $orange;
+            background-color: $orange;
+            box-shadow: 2px 20px 5px -15px $darkbrown25;
+            cursor: pointer;
+
+            &-blank {
+                width: 104px;
+                height: 36px;
+                margin-top: 15px;
+                margin-left: 10px;
+                margin-bottom: 30px;
+                font-family: 'TarabaComfortaa';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17.01px;
+                letter-spacing: 0em;
+                border-radius: 15px;
+                color: $darkgrey;
+                border: 1px solid $orange;
+                cursor: pointer;
+                background: $greywhite30;
+            }
+        }
+    }
+}
+
+.subtitle {
+    width: 327px;
+    margin-bottom: 20px;
+
+    &-text {
+        padding-left: 9px;
+        padding-top: 10px;
+        width: 350px;
+        height: 96px;
+        margin-bottom: 15px;
+    }
+}
+
+.boxes-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    height: 188px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightwhite;
+    box-shadow: 0px 20px 5px -15px $darkbrown25;
+
+    &-title {
+        display: flex;
+        flex-direction: row;
+        margin-top: 35px;
+        width: 58px;
+        height: 21px;
+        justify-content: center;
+
+        & img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &-text {
+        width: 188px;
+        height: 32;
+        margin-top: 10px;
+        text-align: left;
+        color: $darkgrey;
+
+        &-phone {
+            width: 188px;
+            height: 32;
+            margin-top: 10px;
+            margin-left: 40px;
+            text-align: left;
+            color: $darkgrey;
+        }
+
+        &-sms {
+            width: 186px;
+            height: 32;
+            margin-top: 10px;
+            text-align: left;
+            color: $darkgrey;
+        }
+
+        &-email {
+            width: 192px;
+            height: 32;
+            margin-top: 10px;
+            margin-left: 40px;
+            text-align: left;
+            color: $darkgrey;
+        }
+
+        &-whatsapp {
+            width: 146px;
+            height: 48;
+            margin-top: 10px;
+            margin-left: 10px;
+            text-align: left;
+            color: $darkgrey;
+        }
+
+        &-facetime {
+            width: 192px;
+            height: 32;
+            margin-top: 10px;
+            text-align: left;
+            color: $darkgrey;
+        }
+
+        &-location {
+            width: 175px;
+            height: 48;
+            margin-top: 10px;
+            text-align: left;
+            color: $darkgrey;
+        }
+
+        &-paypal {
+            width: 135px;
+            height: 32;
+            margin-top: 10px;
+            text-align: left;
+            color: $darkgrey;
+        }
+    }
+}
+
+.link-text {
+    height: 21px;
+    font-family: 'TarabaComfortaa';
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $darkorange;
+    margin-left: 10px;
+}
+
+.swiper {
+    &-container {
+        position: relative;
+        width: 100%;
+
+        &-box {
+            position: absolute;
+            width: 190px;
+            height: 62px;
+            top: -35px;
+            background: linear-gradient(180deg, $lightocher1 0%, $lightwhite 100%);
+            border-radius: 15px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            z-index: -1;
+
+            & p {
+                font-family: 'TarabaComfortaa';
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $lightgrey;
+            }
+        }
+    }
+
+    &-slide {
+        margin: auto;
+        width: 226px;
+        height: 502px;
+        border-radius: 15px;
+        background: linear-gradient(167.91deg, $lightestocher -1.62%, $lightwhite 104.93%);
+        padding-left: 25px;
+        padding-top: 40px;
+
+        & hr {
+            width: 162px;
+            border: 1px solid $lightgreyline;
+            margin-bottom: 15px;
+        }
+
+        &-title {
+            font-family: 'TarabaComfortaa';
+            color: $darkgrey;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        &-main {
+            margin: auto;
+            margin-top: 30px;
+            width: 226px;
+            height: 502px;
+            border-radius: 15px;
+            background: linear-gradient($lightocher1 17.19%, $lightwhite 100%);
+            padding-left: 25px;
+            padding-top: 40px;
+            z-index: 1;
+
+            & hr {
+                width: 162px;
+                border: 3px solid $white;
+                margin-bottom: 15px;
+            }
+        }
+
+        &-btn {
+            margin: auto;
+            margin-left: -10px;
+            width: 198px;
+            height: 47px;
+            margin-top: 30px;
+            font-family: 'TarabaComfortaa';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.01px;
+            letter-spacing: 0em;
+            border-radius: 15px;
+            color: $white;
+            background-color: $orange;
+            border: $darkorange;
+            box-shadow: 2px 25px 6px -15px $darkbrown25;
+            cursor: pointer;
+        }
+    }
+
+    &-text {
+        margin-top: 10px;
+
+        & p {
+            font-family: 'Roboto';
+            color: $lightgrey;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.41px;
+            margin-bottom: 7px;
+        }
+    }
+}
