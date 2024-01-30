@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Generator_default</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="generator, QR type">
+    <link rel="stylesheet" href="../assets/css/generator.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="../assets/img/footer/bolt-logo.svg" alt="logo Bolt.">
+            <nav>
+                <div>
+                    <ul class="navbar-section">
+                        <li>
+                            <img class="navbar-images" src="../assets/img/home/theme-icon.svg" alt="slika">
+                        </li>
+                        <li><a href="javascript:" class="hamburger-bar" onclick="humburger()">
+                                <img class="hamburger-bar" src="../assets/img/home/menu-icon.svg" alt="h">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-links" id="nav-links">
+                        <li class="rotation" id="nav-links-back" onclick="humburger()">
+                            <a href=" javascript:;" class="exit"><img class="close-button"
+                                    src="../resources/media/home/20-209142_small-close-button-svg-png-icon-free-download.png"
+                                    alt="exit">
+                            </a>
+                        </li>
+
+                        <li class="nav-item_2">
+                            <a href="javascript:;" class="nav-link">Generate<br>QR Codes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link_3">Log in</a>
+                        </li>
+                        <li class="nav-item_4">
+                            <a href="javascript:;" class="nav-link_4">Sing up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <p class="container-title">Select your QR type:</p>
+
+        </section>
+    </main>
+    <script>
+        function humburger() {
+            var x = document.getElementById("nav-links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>
