@@ -62,6 +62,11 @@
     position: relative;
 }
 
+.close-button {
+    width: 22px;
+    height: 22px;
+}
+
 #nav-links {
     display: none;
 }
@@ -124,32 +129,6 @@
 
 .rotation {
     position: relative;
-    margin-left: 90px;
+    margin-left: 120px;
     margin-top: 30px;
-}
-
-.rotation-1 {
-    position: absolute;
-    border: 1px;
-    width: 27px;
-    height: 4px;
-    transform: rotate(45deg);
-    margin-left: 50px;
-    border-radius: 2px;
-    background: $darkgrey;
-    cursor: pointer;
-}
-
-.rotation-2 {
-    position: absolute;
-    border: 1px;
-    width: 27px;
-    height: 4px;
-    transform: rotate(-45deg);
-    margin-left: 49px;
-    margin-bottom: 4px;
-    border-radius: 2px;
-    background: $darkgrey;
-    cursor: pointer;
-    z-index: -1;
 }
