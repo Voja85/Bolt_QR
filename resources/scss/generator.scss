@@ -93,7 +93,30 @@
     border: 1px solid $lightgreyline;
     border-radius: 10px;
     padding-left: 10px;
-    padding-top: 5px;
+    margin-top: 10px;
+
 }
 
-:placeholder-shown {}
+:placeholder-shown {
+    color: $darkgrey;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.line {
+    border: 1px solid $lightgreyline;
+    width: 21.15px;
+    rotate: 134.82deg;
+    margin-left: 290px;
+    margin-top: -9px;
+    resize: none;
+
+    &-under {
+        border: 1px solid $lightgreyline;
+        width: 14.1px;
+        rotate: 134.82deg;
+        margin-left: 296px;
+        resize: none;
+        margin-bottom: 20px;
+    }
+}
