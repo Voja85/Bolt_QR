@@ -105,15 +105,15 @@
                     <div>
                         <p class="content-qr-title">Select foreground color:</p>
                         <div class="content-qr-type">
-                            <p class="content-qr-type-foreground-color"></p>
-                            <p class="content-qr-type-foreground-gradient">#666666</p>
+                            <input type="color" id="get" value="#666666" onchange="fetch()" />
+                            <input type="text" id="put" onchange="fetchput()" />
                         </div>
                     </div>
                     <div>
                         <p class="content-qr-title">Select background color:</p>
                         <div class="content-qr-type">
-                            <p class="content-qr-type-foreground-color"></p>
-                            <p class="content-qr-type-foreground-gradient">#666666</p>
+                            <input type="color" id="get-in" value="#666666" onchange="fetchin()" />
+                            <input type="text" id="put-in" onchange="fetchputin()" />
                         </div>
                     </div>
                     <div>
@@ -129,28 +129,28 @@
                     <div>
                         <p class="content-qr-title">Custom eyes color:</p>
                         <div class="content-qr-type">
-                            <p class="content-qr-type-eyes">Yes</p>
-                            <p class="content-qr-type-eyes-color">No</p>
+                            <input type="color" id="get-eyes" value="#666666" onchange="fetcheyes()" />
+                            <input type="text" id="put-eyes" onchange="fetchputeyes()" />
                         </div>
                     </div>
                     <div>
                         <p class="content-qr-title">Eye inner color:</p>
                         <div class="content-qr-type">
-                            <p class="content-qr-type-inner"></p>
-                            <p class="content-qr-type-inner-gradient">#666666</p>
+                            <input type="color" id="get-inner" value="#666666" onchange="fetchinner()" />
+                            <input type="text" id="put-inner" onchange="fetchputinner()" />
                         </div>
                     </div>
+                    <div>
+                        <p class="content-qr-title">Eye outer color:</p>
+                        <div class="content-qr-type">
+                            <input type="color" id="get-outer" value="#666666" onchange="fetchouter()" />
+                            <input type="text" id="put-outer" onchange="fetchputouter()" />
+                        </div>
+                    </div>
+                    <img src="../resources/media/generator/Screenshot from 2024-02-04 16-43-36.png" alt="">
                 </div>
             </div>
-
-
-
-
-
         </section>
-
-
-
 
 
     </main>
@@ -163,6 +163,57 @@
                 x.style.display = "block";
             }
         }
+
+        function fetch() {/* color in text*/
+            var get = document.getElementById("get").value;
+            document.getElementById("put").value = get;
+        }
+
+        function fetchput() {/* text in color*/
+            var put = document.getElementById("put").value;
+            document.getElementById("get").value = put;
+        }
+
+        function fetchin() {/* color in text*/
+            var getin = document.getElementById("get-in").value;
+            document.getElementById("put-in").value = getin;
+        }
+
+        function fetchputin() {/* text in color*/
+            var putin = document.getElementById("put-in").value;
+            document.getElementById("get-in").value = putin;
+        }
+
+        function fetcheyes() {/* color in text*/
+            var geteyes = document.getElementById("get-eyes").value;
+            document.getElementById("put-eyes").value = geteyes;
+        }
+
+        function fetchputeyes() {/* text in color*/
+            var puteyes = document.getElementById("put-eyes").value;
+            document.getElementById("get-eyes").value = puteyes;
+        }
+
+        function fetchinner() {/* color in text*/
+            var getinner = document.getElementById("get-inner").value;
+            document.getElementById("put-inner").value = getinner;
+        }
+
+        function fetchputinner() {/* text in color*/
+            var putinner = document.getElementById("put-inner").value;
+            document.getElementById("get-inner").value = putinner;
+        }
+
+        function fetchouter() {/* color in text*/
+            var getouter = document.getElementById("get-outer").value;
+            document.getElementById("put-outer").value = getouter;
+        }
+
+        function fetchputouter() {/* text in color*/
+            var putouter = document.getElementById("put-outer").value;
+            document.getElementById("get-outer").value = putouter;
+        }
+
     </script>
 
 </body>

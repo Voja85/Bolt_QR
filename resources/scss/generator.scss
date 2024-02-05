@@ -128,7 +128,188 @@
     }
 }
 
+#get {
+    /*input color*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 90px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+
+    &-in {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 90px;
+        height: 26px;
+        border: none;
+        background-color: transparent;
+
+    }
+
+    &-eyes {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 90px;
+        height: 26px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &-inner {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 90px;
+        height: 26px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &-outer {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 90px;
+        height: 26px;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+#get::-webkit-color-swatch {
+    /*input color*/
+    border-radius: 5px;
+    border: none;
+}
+
+#get-in::-webkit-color-swatch {
+    border-radius: 5px;
+    border: none;
+}
+
+#get::-moz-color-swatch {
+    /*input color*/
+    border-radius: 5px;
+    border: none;
+}
+
+#get-in::-moz-color-swatch {
+    border-radius: 5px;
+    border: none;
+}
+
+#get-eyes::-webkit-color-swatch {
+    /*input color*/
+    border-radius: 5px;
+    border: none;
+}
+
+#get-eyes::-moz-color-swatch {
+    /*input color*/
+    border-radius: 5px;
+    border: none;
+}
+
+#get-inner::-webkit-color-swatch {
+    /*input color*/
+    border-radius: 5px;
+    border: none;
+}
+
+#get-inner::-moz-color-swatch {
+    /*input color*/
+    border-radius: 5px;
+    border: none;
+}
+
+#get-outer::-webkit-color-swatch {
+    /*input color*/
+    border-radius: 5px;
+    border: none;
+}
+
+#get-outer::-moz-color-swatch {
+    /*input color*/
+    border-radius: 5px;
+    border: none;
+}
+
+#put {
+    width: 69px;
+    height: 26px;
+    color: $darkgrey;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 4px;
+    border: 1px solid $lightgreyline;
+    border-radius: 5px;
+
+    &-in {
+        width: 69px;
+        height: 26px;
+        color: $darkgrey;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 3px;
+        border: 1px solid $lightgreyline;
+        border-radius: 5px;
+    }
+
+    &-eyes {
+        width: 69px;
+        height: 26px;
+        color: $darkgrey;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 3px;
+        border: 1px solid $lightgreyline;
+        border-radius: 5px;
+    }
+
+    &-inner {
+        width: 69px;
+        height: 26px;
+        color: $darkgrey;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 3px;
+        border: 1px solid $lightgreyline;
+        border-radius: 5px;
+    }
+
+    &-outer {
+        width: 69px;
+        height: 26px;
+        color: $darkgrey;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 3px;
+        border: 1px solid $lightgreyline;
+        border-radius: 5px;
+    }
+}
+
 .content {
+
+    img {
+        width: 194px;
+        height: 193px;
+        margin-bottom: 10px;
+    }
 
     &-qr {
         display: flex;
@@ -142,8 +323,6 @@
             justify-content: flex-start;
             column-gap: 20px;
             margin-bottom: 20px;
-
-
 
             &-color {
                 background-color: $orange;
@@ -171,6 +350,7 @@
             }
 
             &-foreground {
+
                 &-color {
                     background-color: $lightgreyline;
                     width: 90px;
@@ -227,6 +407,27 @@
                     margin-left: 13px;
                 }
             }
+
+            &-inner {
+                background-color: $darkgrey;
+                width: 90px;
+                height: 26px;
+                border-radius: 5px;
+
+
+                &-gradient {
+                    width: 69px;
+                    height: 26px;
+                    color: $darkgrey;
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: center;
+                    padding-top: 4px;
+                    border: 1px solid $lightgreyline;
+                    border-radius: 5px;
+                }
+            }
         }
 
         &-title {
@@ -237,8 +438,6 @@
             font-family: 'TarabaComfortaa';
             font-weight: 400;
         }
-
-
 
         &-color {
             display: flex;
@@ -293,8 +492,12 @@
             p {
                 text-align: center;
             }
-
         }
+
+        &-form {
+            &-title {}
+        }
+
     }
 
 }
