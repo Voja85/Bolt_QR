@@ -119,10 +119,8 @@
                     <div>
                         <p class="content-qr-title">Background transparency:</p>
                         <div class="content-qr-type">
-                            <div class="content-qr-type-foreground-color-level">
-                                <div class="content-qr-type-foreground-color-level-gradient"></div>
-                            </div>
-                            <p class="content-qr-type-foreground-gradient">100%</p>
+                            <progress id="file" value="72" min="0" max="100" onchange="fetchfile()">70</progress>
+                            <input type="text" id="file-in" onchange="fetchfilein()">
                         </div>
                     </div>
                     <hr>
@@ -149,9 +147,25 @@
                     </div>
                     <img src="../resources/media/generator/Screenshot from 2024-02-04 16-43-36.png" alt="">
                 </div>
+                <p class="content-qr-title">Select size</p>
+                <div class="custom-select">
+                    <select>
+                        <option value="0">25 px:</option>
+                        <option value="1">50 px</option>
+                        <option value="2">100 px</option>
+                        <option value="3">200 px</option>
+                        <option value="4">300 px</option>
+                        <option value="5">400 px</option>
+                        <option value="6">500 px</option>
+                        <option value="7">600 px</option>
+                        <option value="8">700 px</option>
+                        <option value="9">800 px</option>
+                        <option value="10">900 px</option>
+                        <option value="11">1000 px</option>
+                    </select>
+                </div>
             </div>
         </section>
-
 
     </main>
     <script>
@@ -213,6 +227,12 @@
             var putouter = document.getElementById("put-outer").value;
             document.getElementById("get-outer").value = putouter;
         }
+
+        function fetchfilein() {/* text in value*/
+            var filein = document.getElementById("file-in").value;
+            document.getElementById("file").value = filein;
+        }
+
 
     </script>
 

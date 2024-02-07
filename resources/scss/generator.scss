@@ -178,6 +178,46 @@
         border: none;
         background-color: transparent;
     }
+
+
+}
+
+#file {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 90px;
+    height: 26px;
+    border: 1px solid $lightgreyline;
+    border-radius: 5px;
+    background-color: $white;
+
+    &-in {
+        width: 69px;
+        height: 26px;
+        color: $darkgrey;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 3px;
+        border: 1px solid $lightgreyline;
+        border-radius: 5px;
+    }
+}
+
+#file::-webkit-progress-bar {
+    margin-left: -1px;
+    border-radius: 5px;
+    background-color: $lightgreyline;
+    border: none;
+}
+
+#file::-moz-progress-bar {
+    margin-left: -1px;
+    border-radius: 5px;
+    background-color: $lightgreyline;
+    border: none;
 }
 
 #get::-webkit-color-swatch {
@@ -188,6 +228,7 @@
 
 #get-in::-webkit-color-swatch {
     border-radius: 5px;
+    background: green;
     border: none;
 }
 
