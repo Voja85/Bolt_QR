@@ -58,19 +58,19 @@
         <section class="container">
             <p class="container-title">Select your QR type:</p>
             <div class="container-item">
-                <p class="container-items-fill">Text</p>
-                <p class="container-items">URL</p>
-                <p class="container-items">Phone</p>
-                <p class="container-items">SMS</p>
-                <p class="container-items">Email</p>
-                <p class="container-items">Whatsapp</p>
-                <p class="container-items">Facetime</p>
-                <p class="container-items-empty">Location</p>
-                <p class="container-items-empty">WiFi</p>
-                <p class="container-items-empty">Event</p>
-                <p class="container-items-empty">Crypto</p>
-                <p class="container-items-empty">Vcard</p>
-                <p class="container-items-empty">PayPal</p>
+                <button class="container-items-fill">Text</button>
+                <button class="container-items">URL</button>
+                <button class="container-items">Phone</button>
+                <button class="container-items">SMS</button>
+                <button class="container-items">Email</button>
+                <button class="container-items">Whatsapp</button>
+                <button class="container-items">Facetime</button>
+                <button class="container-items-empty">Location</button>
+                <button class="container-items-empty">WiFi</button>
+                <button class="container-items-empty">Event</button>
+                <button class="container-items-empty">Crypto</button>
+                <button class="container-items-empty">Vcard</button>
+                <button class="container-items-empty">PayPal</button>
             </div>
             <p class="container-title-item">Enter your text to generate:</p>
             <div class="box">
@@ -98,8 +98,8 @@
                     <div>
                         <p class="content-qr-title">Select foreground type:</p>
                         <div class="content-qr-type">
-                            <p class="content-qr-type-color">Color</p>
-                            <p class="content-qr-type-gradient">Gradient</p>
+                            <button class="content-qr-type-color">Color</button>
+                            <a href="" class="content-qr-type-gradient" target="_blank">Gradient</a>
                         </div>
                     </div>
                     <div>
@@ -119,16 +119,15 @@
                     <div>
                         <p class="content-qr-title">Background transparency:</p>
                         <div class="content-qr-type">
-                            <progress id="file" value="72" min="0" max="100" onchange="fetchfile()">70</progress>
-                            <input type="text" id="file-in" onchange="fetchfilein()">
+                            <progress id="file" value="72" min="0" max="100">70</progress>
+                            <input type="text" id="file-in" onchange="fetchfilein()" onchange="fetchfile()">
                         </div>
                     </div>
-                    <hr>
                     <div>
                         <p class="content-qr-title">Custom eyes color:</p>
                         <div class="content-qr-type">
-                            <input type="color" id="get-eyes" value="#666666" onchange="fetcheyes()" />
-                            <input type="text" id="put-eyes" onchange="fetchputeyes()" />
+                            <a href="" class="content-qr-type-gradient" target="_blank">Yes</a>
+                            <button class="content-qr-type-color">No</button>
                         </div>
                     </div>
                     <div>
@@ -145,7 +144,10 @@
                             <input type="text" id="put-outer" onchange="fetchputouter()" />
                         </div>
                     </div>
-                    <img src="../resources/media/generator/Screenshot from 2024-02-04 16-43-36.png" alt="">
+                    <div class="placeholder">
+                        <img src="../resources/media/generator/Screenshot from 2024-02-04 16-43-36.png"
+                            alt="Generated QR code">
+                    </div>
                 </div>
                 <p class="custom-select-title">Select size</p>
                 <div class="custom-select">
@@ -211,91 +213,72 @@
                 </div>
                 <p class="custom-select-title">Select format</p>
                 <div class="custom-format">
-                    <input type="radio" id="jpg" name="fav" value="jpg" checked>
-                    <span class="chexmark"></span>
-                    <label for="jpg">JPG</label>
-                    <input type="radio" id="png" name="fav" value="png">
-                    <span class="chexmark"></span>
-                    <label for="png">PNG</label>
-                    <input type="radio" id="webp" name="fav" value="webp">
-                    <span class="chexmark"></span>
-                    <label for="webp">WEBP</label>
-                    <input type="radio" id="svg" name="fav" value="svg">
-                    <span class="chexmark"></span>
-                    <label for="svg">SVG</label>
+                    <div>
+                        <input type="radio" id="jpg" name="fav" value="jpg" checked>
+                        <label for="jpg">JPG</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="png" name="fav" value="png">
+                        <label for="png">PNG</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="webp" name="fav" value="webp">
+                        <label for="webp">WEBP</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="svg" name="fav" value="svg">
+                        <label for="svg">SVG</label>
+                    </div>
                 </div>
+                <div class="btn">
+                    <button class="btn-download">Download</button>
+                    <button class="btn-print">Print</button>
+                </div>
+                <p class="test_notification">*Make sure to test out your configured QR code before using it in
+                    production.
+                </p>
             </div>
         </section>
-
     </main>
-    <script>
-        function humburger() {
-            var x = document.getElementById("nav-links");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
+    <footer>
+        <div class="footer-container">
+            <img class="footer-logo" src="../assets/img/footer/bolt-logo.svg" alt="logo_Bolt_footer">
+            <div class="footer-links">
+                <img class="footer-link" src="../assets/img/footer/linked-in-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/instagram-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/you-tube-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/facebook-large.svg" alt="logo_Bolt_footer">
+            </div>
 
-        function fetch() {/* color in text*/
-            var get = document.getElementById("get").value;
-            document.getElementById("put").value = get;
-        }
+            <div class="footer-mix">
+                <p class="footer-text-link">Quick links</p>
+                <p class="footer-text-links">Generate QR codes</p>
+                <p class="footer-text-links">Pricing</p>
+            </div>
 
-        function fetchput() {/* text in color*/
-            var put = document.getElementById("put").value;
-            document.getElementById("get").value = put;
-        }
+            <div>
+                <p class="footer-text-links">Terms & Conditions</p>
+                <p class="footer-text-links">Privacy Policy</p>
+            </div>
 
-        function fetchin() {/* color in text*/
-            var getin = document.getElementById("get-in").value;
-            document.getElementById("put-in").value = getin;
-        }
+            <hr class="footer-line">
 
-        function fetchputin() {/* text in color*/
-            var putin = document.getElementById("put-in").value;
-            document.getElementById("get-in").value = putin;
-        }
+            <p class="footer-text-linked">Our family</p>
+            <img class="footer-item-logo" src="../assets/img/footer/taraba-logo-latin-full-color-white 1.svg"
+                alt="taraba-logo">
+            <img class="footer-item-tech" src="../assets/img/footer/trb-tech-logo-solid-white (1) 1.svg"
+                alt="taraba-tech">
+            <img class="footer-item-portal" src="../assets/img/footer/portal-logo-lat-solid-white 1.svg"
+                alt="taraba_portal">
+            <img class="footer-item-edu" src="../assets/img/footer/trb-edu-logo-solid-white.svg" alt="taraba_edu">
+            <img class="footer-item-oakli" src="../assets/img/footer/oakly-logo-full-color 9.svg" alt="oakli">
 
-        function fetcheyes() {/* color in text*/
-            var geteyes = document.getElementById("get-eyes").value;
-            document.getElementById("put-eyes").value = geteyes;
-        }
+            <p class="footer-copyright">Copyright © 2019 - 2022 Taraba doo or it's affilliates. All rights reserved.</p>
+        </div>
+    </footer>
 
-        function fetchputeyes() {/* text in color*/
-            var puteyes = document.getElementById("put-eyes").value;
-            document.getElementById("get-eyes").value = puteyes;
-        }
-
-        function fetchinner() {/* color in text*/
-            var getinner = document.getElementById("get-inner").value;
-            document.getElementById("put-inner").value = getinner;
-        }
-
-        function fetchputinner() {/* text in color*/
-            var putinner = document.getElementById("put-inner").value;
-            document.getElementById("get-inner").value = putinner;
-        }
-
-        function fetchouter() {/* color in text*/
-            var getouter = document.getElementById("get-outer").value;
-            document.getElementById("put-outer").value = getouter;
-        }
-
-        function fetchputouter() {/* text in color*/
-            var putouter = document.getElementById("put-outer").value;
-            document.getElementById("get-outer").value = putouter;
-        }
-
-        function fetchfilein() {/* text in value*/
-            var filein = document.getElementById("file-in").value;
-            document.getElementById("file").value = filein;
-        }
-
-    </script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
-
 
 </html>
