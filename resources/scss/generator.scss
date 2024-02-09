@@ -96,6 +96,17 @@
 
 .box {
     width: 309px;
+    position: relative;
+
+    &-point {
+        position: absolute;
+        top: 24px;
+        left: 13px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $red;
+    }
 }
 
 .area-comment {
@@ -107,6 +118,18 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
+
+    &-input {
+        /*generator_empty_input*/
+        max-width: 100%;
+        width: 309px;
+        height: 89px;
+        border: 1px solid $red;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
 }
 
 .area-comment:placeholder-shown {
@@ -118,8 +141,23 @@
     line-height: 16px;
 }
 
+.area-comment-input:placeholder-shown {
+    /*generator_empty_input*/
+    padding-top: 10px;
+    padding-left: 25px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
 .area-comment::-moz-placeholder {
     color: $darkgrey;
+    opacity: 1 !important;
+}
+
+.area-comment-input::-moz-placeholder {
+    color: $red;
     opacity: 1 !important;
 }
 
@@ -131,6 +169,15 @@
     margin-top: -9px;
     resize: none;
 
+    &-input {
+        /*generator_empty_input*/
+        border: 1px solid $red;
+        width: 21.15px;
+        rotate: 134.82deg;
+        margin-left: 290px;
+        margin-top: -9px;
+    }
+
     &-under {
         border: 1px solid $lightgreyline;
         width: 14.1px;
@@ -138,6 +185,15 @@
         margin-left: 296px;
         resize: none;
         margin-bottom: 20px;
+
+        &-input {
+            /*generator_empty_input*/
+            border: 1px solid $red;
+            width: 14.1px;
+            rotate: 134.82deg;
+            margin-left: 296px;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -159,7 +215,6 @@
         height: 26px;
         border: none;
         background-color: transparent;
-
     }
 
     &-inner {
