@@ -147,22 +147,82 @@
                     </div>
                     <img src="../resources/media/generator/Screenshot from 2024-02-04 16-43-36.png" alt="">
                 </div>
-                <p class="content-qr-title">Select size</p>
+                <p class="custom-select-title">Select size</p>
                 <div class="custom-select">
-                    <select>
-                        <option value="0">25 px:</option>
-                        <option value="1">50 px</option>
-                        <option value="2">100 px</option>
-                        <option value="3">200 px</option>
-                        <option value="4">300 px</option>
-                        <option value="5">400 px</option>
-                        <option value="6">500 px</option>
-                        <option value="7">600 px</option>
-                        <option value="8">700 px</option>
-                        <option value="9">800 px</option>
-                        <option value="10">900 px</option>
-                        <option value="11">1000 px</option>
+                    <select class="custom-select-box">
+                        <option value="0">25</option>
+                        <option value="1">50</option>
+                        <option value="2">100</option>
+                        <option value="3">200</option>
+                        <option value="4">300</option>
+                        <option value="5">400</option>
+                        <option value="6">500</option>
+                        <option value="7">600</option>
+                        <option value="8">700</option>
+                        <option value="9">800</option>
+                        <option value="10">900</option>
+                        <option value="11">1000</option>
                     </select>
+                    <div class="custom-select-px">px</div>
+                    <div class="custom-select-arrow">
+                        <img src="../resources/media/generator/drop_down_arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <p class="custom-select-title">Margine size</p>
+                <div class="custom-select">
+                    <select class="custom-select-box">
+                        <option value="0">1</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                        <option value="4">5</option>
+                        <option value="5">6</option>
+                        <option value="6">7</option>
+                        <option value="7">8</option>
+                        <option value="8">9</option>
+                        <option value="9">10</option>
+                        <option value="10">11</option>
+                        <option value="11">12</option>
+                    </select>
+                    <div class="custom-select-px">px</div>
+                    <div class="custom-select-arrow">
+                        <img src="../resources/media/generator/drop_down_arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <p class="custom-select-title">Error correction capability</p>
+                <div class="custom-select">
+                    <select class="custom-select-box">
+                        <option value="0">M - medium (7%) </option>
+                        <option value="1">M - medium (7%) </option>
+                        <option value="2">M - medium (7%) </option>
+                        <option value="3">M - medium (7%) </option>
+                        <option value="4">M - medium (7%) </option>
+                        <option value="5">M - medium (7%) </option>
+                        <option value="6">M - medium (7%) </option>
+                        <option value="7">M - medium (7%) </option>
+                        <option value="8">M - medium (7%) </option>
+                        <option value="9">M - medium (7%) </option>
+                        <option value="10">M - medium (7%) </option>
+                        <option value="11">M - medium (7%) </option>
+                    </select>
+                    <div class="custom-select-arrow">
+                        <img src="../resources/media/generator/drop_down_arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <p class="custom-select-title">Select format</p>
+                <div class="custom-format">
+                    <input type="radio" id="jpg" name="fav" value="jpg" checked>
+                    <span class="chexmark"></span>
+                    <label for="jpg">JPG</label>
+                    <input type="radio" id="png" name="fav" value="png">
+                    <span class="chexmark"></span>
+                    <label for="png">PNG</label>
+                    <input type="radio" id="webp" name="fav" value="webp">
+                    <span class="chexmark"></span>
+                    <label for="webp">WEBP</label>
+                    <input type="radio" id="svg" name="fav" value="svg">
+                    <span class="chexmark"></span>
+                    <label for="svg">SVG</label>
                 </div>
             </div>
         </section>
@@ -232,7 +292,6 @@
             var filein = document.getElementById("file-in").value;
             document.getElementById("file").value = filein;
         }
-
 
     </script>
 

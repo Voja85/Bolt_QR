@@ -349,7 +349,7 @@
     img {
         width: 194px;
         height: 193px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     &-qr {
@@ -482,8 +482,10 @@
 
         &-color {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-items: center;
             align-items: center;
+            padding-top: 10px;
             width: 60px;
             height: 60px;
             border: 2px solid $orange;
@@ -508,8 +510,10 @@
 
         &-brand {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-items: center;
             align-items: center;
+            padding-top: 10px;
             width: 60px;
             height: 60px;
             border: 2px solid $orange;
@@ -538,7 +542,80 @@
         &-form {
             &-title {}
         }
+    }
+}
+
+.custom-select {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 160px;
+    height: 27px;
+    border-radius: 5px;
+    padding-top: 5px;
+    border: 1px solid $lightgreyline;
+    font-family: 'TarabaComfortaa';
+    font-size: 14px;
+    font-family: 400;
+    line-height: 17.01px;
+    cursor: pointer;
+
+    &-title {
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-family: 'TarabaComfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        color: $darkgrey;
+    }
+
+    &-box {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 160px;
+        border: none;
+        border-radius: 5px;
+        padding-left: 5px;
+        font-family: 'TarabaComfortaa';
+        font-size: 14px;
+        font-family: 400;
+        line-height: 17.01px;
+        background-color: transparent;
+        cursor: pointer;
 
     }
 
+    &-px {
+        position: absolute;
+        right: 20px;
+        width: 90px;
+        padding-bottom: 4px;
+    }
+
+    &-arrow {
+        position: absolute;
+        right: 3px;
+        pointer-events: none;
+
+        img {
+            width: 20px;
+            height: 20px;
+
+        }
+    }
+}
+
+.custom-radio {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    color: $darkgrey;
+}
+
+.custom-radio input[type=radio] {
+    margin-right: 6px;
 }
