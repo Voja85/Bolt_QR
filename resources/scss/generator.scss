@@ -107,6 +107,72 @@
         border-radius: 50%;
         background-color: $red;
     }
+
+    &-event {
+        position: relative;
+        width: 309px;
+        height: 46px;
+        border: 1px solid $lightgreyline;
+        border-radius: 10px;
+        margin-top: 10px;
+
+        &-icon {
+            position: absolute;
+            left: 266px;
+            top: 32px;
+        }
+    }
+
+    &-select {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 309px;
+        height: 46px;
+        border-radius: 10px;
+        padding-top: 3px;
+        margin-top: 10px;
+        border: 1px solid $lightgreyline;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-family: 400;
+        line-height: 16.01px;
+        cursor: pointer;
+
+        &-zone {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 309px;
+            height: 46px;
+            border: none;
+            border-radius: 10px;
+            padding-left: 5px;
+            font-family: 'Roboto';
+            font-size: 14px;
+            font-family: 400;
+            line-height: 16.01px;
+            background-color: transparent;
+            color: $darkgrey;
+            cursor: pointer;
+
+            &-icon {
+                position: absolute;
+                left: 266px;
+                top: 4px;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.box-event:placeholder-shown {
+    padding-left: 10px;
+}
+
+.box-event::-moz-placeholder {
+    color: $darkgrey;
+    opacity: 1;
 }
 
 .area-comment {
