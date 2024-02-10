@@ -49,13 +49,14 @@
         margin-right: 19px;
         border-radius: 15px;
         margin-bottom: 10px;
+        padding-top: 3px;
         font-family: 'TarabaComfortaa';
         font-size: 14px;
         font-weight: 400;
         justify-content: center;
         align-items: center;
         color: $black;
-        background-color: $lightwhite_greywhite;
+        background-color: transparent;
 
         &-fill {
             display: flex;
@@ -85,11 +86,12 @@
             margin-right: 19px;
             border-radius: 15px;
             margin-bottom: 10px;
+            padding-top: 3px;
             justify-content: center;
             align-items: center;
             color: $lightgrey;
             text-decoration: line-through;
-            background-color: $lightwhite_greywhite;
+            background-color: transparent;
         }
     }
 }
@@ -168,6 +170,8 @@
 
 .box-event:placeholder-shown {
     padding-left: 10px;
+    background-color: transparent;
+
 }
 
 .box-event::-moz-placeholder {
@@ -205,6 +209,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+    background-color: transparent;
 }
 
 .area-comment-input:placeholder-shown {
@@ -326,6 +331,7 @@
         padding-top: -2px;
         border: 1px solid $lightgreyline;
         border-radius: 5px;
+        background-color: transparent;
     }
 }
 
@@ -413,6 +419,7 @@
     padding-top: -2px;
     border: 1px solid $lightgreyline;
     border-radius: 5px;
+    background-color: transparent;
 
     &-in {
         width: 69px;
@@ -425,6 +432,7 @@
         border: 1px solid $lightgreyline;
         border-radius: 5px;
         padding-top: -2px;
+        background-color: transparent;
     }
 
     &-inner {
@@ -438,6 +446,7 @@
         border: 1px solid $lightgreyline;
         border-radius: 5px;
         padding-top: -2px;
+        background-color: transparent;
     }
 
     &-outer {
@@ -451,6 +460,7 @@
         border: 1px solid $lightgreyline;
         border-radius: 5px;
         padding-top: -2px;
+        background-color: transparent;
     }
 }
 
@@ -687,7 +697,7 @@
     }
 
     &-print {
-        background-color: $light_greywhite;
+        background-color: transparent;
         color: $darkgrey;
     }
 }
