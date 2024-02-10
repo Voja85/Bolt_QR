@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Generator_default_brand</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="generator, QR type, vcard">
+    <link rel="stylesheet" href="../assets/css/generator.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="../assets/img/footer/bolt-logo.svg" alt="logo Bolt.">
+            <nav>
+                <div>
+                    <ul class="navbar-section">
+                        <li>
+                            <img class="navbar-images" src="../assets/img/home/theme-icon.svg" alt="slika">
+                        </li>
+                        <li><a href="javascript:" class="hamburger-bar" onclick="humburger()">
+                                <img class="hamburger-bar" src="../assets/img/home/menu-icon.svg" alt="h">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-links" id="nav-links">
+                        <li class="rotation" id="nav-links-back" onclick="humburger()">
+                            <a href=" javascript:;" class="exit"><img class="close-button"
+                                    src="../resources/media/home/20-209142_small-close-button-svg-png-icon-free-download.png"
+                                    alt="exit">
+                            </a>
+                        </li>
+
+                        <li class="nav-item_2">
+                            <a href="javascript:;" class="nav-link">Generate<br>QR Codes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link_3">Log in</a>
+                        </li>
+                        <li class="nav-item_4">
+                            <a href="javascript:;" class="nav-link_4">Sing up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <p class="container-title">Select your QR type:</p>
+            <div class="container-item">
+                <button class="container-items-fill">Text</button>
+                <button class="container-items">URL</button>
+                <button class="container-items">Phone</button>
+                <button class="container-items">SMS</button>
+                <button class="container-items">Email</button>
+                <button class="container-items">Whatsapp</button>
+                <button class="container-items">Facetime</button>
+                <button class="container-items-empty">Location</button>
+                <button class="container-items-empty">WiFi</button>
+                <button class="container-items-empty">Event</button>
+                <button class="container-items-empty">Crypto</button>
+                <button class="container-items-empty">Vcard</button>
+                <button class="container-items-empty">PayPal</button>
+            </div>
+            <p class="container-title-item">Enter your text to generate:</p>
+            <div class="box">
+                <textarea class="area-comment" name="" id="" placeholder="Enter your text here"></textarea>
+                <p class="line"></p>
+                <p class="line-under"></p>
+            </div>
+            <p class="container-title">Style your QR code:</p>
+            <div class="content">
+                <div class="content-qr">
+                    <div>
+                        <div class="content-qr-color-oposit"> <!--ne postoji originalna slika ovde screenshot uradjen-->
+                            <img src="../resources/media/generator/color_orange.png" alt="paint">
+                        </div>
+                        <p class="content-qr-color-text">Color</p>
+                    </div>
+                    <div>
+                        <div class="content-qr-brand-oposit"><!--ne postoji originalna slika delimicno prilagodjena-->
+                            <img src="../assets/img/generator/B.svg" alt="paint">
+                        </div>
+                        <p class="content-qr-brand-text">Brand</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="content-qr-title">Logo</p>
+                    <div class="content-qr-type">
+                        <button class="content-qr-type-color-file">Choose file</button>
+                        <a href="" class="content-qr-type-gradient-file" target="_blank">No file chosen</a>
+                    </div>
+                </div>
+                <p class="content-qr-type-text">.jpg, .jpeg, .png, .gif allowed. max file size is 2 MB.</p>
+                <div>
+                    <p class="content-qr-title">Adjust logo size</p>
+                    <div class="content-qr-type">
+                        <progress id="file" value="72" min="0" max="100">70</progress>
+                        <input type="text" id="file-in" onchange="fetchfilein()" onchange="fetchfile()">
+                    </div>
+                </div>
+                <div class="placeholder">
+                    <img src="../resources/media/generator/Screenshot from 2024-02-04 16-43-36.png"
+                        alt="Generated QR code">
+                </div>
+            </div>
+            <p class="custom-select-title">Select size</p>
+            <div class="custom-select">
+                <select class="custom-select-box">
+                    <option value="0">25</option>
+                    <option value="1">50</option>
+                    <option value="2">100</option>
+                    <option value="3">200</option>
+                    <option value="4">300</option>
+                    <option value="5">400</option>
+                    <option value="6">500</option>
+                    <option value="7">600</option>
+                    <option value="8">700</option>
+                    <option value="9">800</option>
+                    <option value="10">900</option>
+                    <option value="11">1000</option>
+                </select>
+                <div class="custom-select-px">px</div>
+                <div class="custom-select-arrow">
+                    <img src="../resources/media/generator/drop_down_arrow.png" alt="arrow">
+                </div>
+            </div>
+            <p class="custom-select-title">Margine size</p>
+            <div class="custom-select">
+                <select class="custom-select-box">
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                    <option value="10">11</option>
+                    <option value="11">12</option>
+                </select>
+                <div class="custom-select-px">px</div>
+                <div class="custom-select-arrow">
+                    <img src="../resources/media/generator/drop_down_arrow.png" alt="arrow">
+                </div>
+            </div>
+            <p class="custom-select-title">Error correction capability</p>
+            <div class="custom-select">
+                <select class="custom-select-box">
+                    <option value="0">M - medium (7%) </option>
+                    <option value="1">M - medium (7%) </option>
+                    <option value="2">M - medium (7%) </option>
+                    <option value="3">M - medium (7%) </option>
+                    <option value="4">M - medium (7%) </option>
+                    <option value="5">M - medium (7%) </option>
+                    <option value="6">M - medium (7%) </option>
+                    <option value="7">M - medium (7%) </option>
+                    <option value="8">M - medium (7%) </option>
+                    <option value="9">M - medium (7%) </option>
+                    <option value="10">M - medium (7%) </option>
+                    <option value="11">M - medium (7%) </option>
+                </select>
+                <div class="custom-select-arrow">
+                    <img src="../resources/media/generator/drop_down_arrow.png" alt="arrow">
+                </div>
+            </div>
+            <p class="custom-select-title">Select format</p>
+            <div class="custom-format">
+                <div>
+                    <input type="radio" id="jpg" name="fav" value="jpg" checked>
+                    <label for="jpg">JPG</label>
+                </div>
+                <div>
+                    <input type="radio" id="png" name="fav" value="png">
+                    <label for="png">PNG</label>
+                </div>
+                <div>
+                    <input type="radio" id="webp" name="fav" value="webp">
+                    <label for="webp">WEBP</label>
+                </div>
+                <div>
+                    <input type="radio" id="svg" name="fav" value="svg">
+                    <label for="svg">SVG</label>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="btn-download">Download</button>
+                <button class="btn-print">Print</button>
+            </div>
+            <p class="test_notification">*Make sure to test out your configured QR code before using it in
+                production.
+            </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img class="footer-logo" src="../assets/img/footer/bolt-logo.svg" alt="logo_Bolt_footer">
+            <div class="footer-links">
+                <img class="footer-link" src="../assets/img/footer/linked-in-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/instagram-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/you-tube-large.svg" alt="logo_Bolt_footer">
+                <img class="footer-link" src="../assets/img/footer/facebook-large.svg" alt="logo_Bolt_footer">
+            </div>
+
+            <div class="footer-mix">
+                <p class="footer-text-link">Quick links</p>
+                <p class="footer-text-links">Generate QR codes</p>
+                <p class="footer-text-links">Pricing</p>
+            </div>
+
+            <div>
+                <p class="footer-text-links">Terms & Conditions</p>
+                <p class="footer-text-links">Privacy Policy</p>
+            </div>
+
+            <hr class="footer-line">
+
+            <p class="footer-text-linked">Our family</p>
+            <img class="footer-item-logo" src="../assets/img/footer/taraba-logo-latin-full-color-white 1.svg"
+                alt="taraba-logo">
+            <img class="footer-item-tech" src="../assets/img/footer/trb-tech-logo-solid-white (1) 1.svg"
+                alt="taraba-tech">
+            <img class="footer-item-portal" src="../assets/img/footer/portal-logo-lat-solid-white 1.svg"
+                alt="taraba_portal">
+            <img class="footer-item-edu" src="../assets/img/footer/trb-edu-logo-solid-white.svg" alt="taraba_edu">
+            <img class="footer-item-oakli" src="../assets/img/footer/oakly-logo-full-color 9.svg" alt="oakli">
+
+            <p class="footer-copyright">Copyright © 2019 - 2022 Taraba doo or it's affilliates. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

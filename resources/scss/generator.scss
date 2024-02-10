@@ -552,6 +552,28 @@
                 font-weight: 400;
                 text-align: center;
                 padding-top: 3px;
+
+                &-file {
+                    background-color: $orange;
+                    width: 116px;
+                    height: 27px;
+                    color: $white;
+                    border: none;
+                    border-radius: 5px;
+                    font-family: 'TarabaComfortaa';
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: center;
+                    padding-top: 3px;
+                }
+
+                &-text {
+                    font-family: 'Roboto';
+                    font-size: 12px;
+                    font-weight: 300;
+                    line-height: 14px;
+                    text-align: left;
+                }
             }
 
             &-gradient {
@@ -564,6 +586,18 @@
                 font-weight: 400;
                 text-align: center;
                 padding-top: 6px;
+
+                &-file {
+                    width: 89px;
+                    height: 16px;
+                    text-decoration: none;
+                    color: $darkgrey;
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding-top: 6px;
+                    margin-left: -10px;
+                }
             }
         }
 
@@ -596,6 +630,16 @@
                 font-size: 14px;
                 padding: auto;
                 text-align: center;
+            }
+
+            &-oposit {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                padding-top: 5px;
+                width: 60px;
+                height: 60px;
             }
 
             img {
@@ -632,6 +676,18 @@
 
             p {
                 text-align: center;
+            }
+
+            &-oposit {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                padding-top: 18px;
+                width: 60px;
+                height: 60px;
+                background-color: $orange;
+                border-radius: 10px;
             }
         }
     }
