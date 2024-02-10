@@ -630,6 +630,16 @@
                 font-size: 14px;
                 padding: auto;
                 text-align: center;
+
+                &-color {
+                    margin-top: 5px;
+                    font-family: 'TarabaComfortaa';
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $darkgrey;
+                    padding: auto;
+                    text-align: center;
+                }
             }
 
             &-oposit {
@@ -667,6 +677,16 @@
                 color: $darkgrey;
                 padding: auto;
                 text-align: center;
+
+                &-brand {
+                    margin-top: 5px;
+                    font-family: 'TarabaComfortaa';
+                    font-weight: 900;
+                    font-size: 14px;
+                    color: $orange;
+                    padding: auto;
+                    text-align: center;
+                }
             }
 
             img {
