@@ -150,8 +150,23 @@
         margin-left: 5px;
         z-index: 0;
 
-        /*  log_in.html  */
+        /*  sing_up_error.html  */
+        &-error {
+            width: 285px;
+            height: 48px;
+            font-family: 'Roboto';
+            color: $red;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            letter-spacing: 0em;
+            margin-left: 5px;
+            z-index: 0;
+        }
 
+        /*  log_in.html  */
         &-desc {
             margin-top: 4px;
             padding-left: 5px;
@@ -190,6 +205,16 @@ input[type=text] {
         font-size: 14px;
         line-height: 17.01px;
     }
+}
+
+input[type=checkbox] {
+    position: absolute;
+    margin-top: 0px;
+    width: 24.5px;
+    height: 24.5px;
+    margin-left: 0.25px;
+    z-index: -2;
+    outline: $red;
 }
 
 input[type=checkbox] {
