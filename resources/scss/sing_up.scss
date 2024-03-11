@@ -124,6 +124,7 @@
         margin-left: 8px;
 
         /*  log_in.html  */
+        /*  sing_up.html  */
         &-login {
             color: $orange;
             text-decoration: underline;
@@ -131,6 +132,7 @@
             font-size: 14px;
             font-weight: 300;
             line-height: 17.01px;
+            cursor: pointer;
         }
     }
 }
@@ -217,11 +219,13 @@ input[type=checkbox] {
     outline: $red;
 }
 
-input[type=checkbox] {
-    position: absolute;
-    margin-top: 0px;
-    width: 24.5px;
-    height: 24.5px;
-    margin-left: 0.25px;
-    z-index: -2;
+/* Responsive */
+
+@media screen and (min-width: 360px) {
+
+    .section {
+        &-container {
+            width: 360px;
+        }
+    }
 }

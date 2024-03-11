@@ -118,3 +118,15 @@
         margin-bottom: 20px;
     }
 }
+
+/* Responsive */
+
+@media screen and (min-width: 360px) {
+
+    .footer {
+        &-container {
+            width: 360px;
+
+        }
+    }
+}
