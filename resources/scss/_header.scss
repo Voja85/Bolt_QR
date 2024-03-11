@@ -16,7 +16,6 @@
 }
 
 .navbar {
-
     &-section {
         list-style-type: none;
         display: flex;
@@ -42,14 +41,6 @@
         left: 172px;
         list-style: none;
         z-index: 3;
-    }
-
-    &-links-items {
-        width: 22.05px;
-        height: 21.92px;
-        border-radius: 2px;
-        margin-right: 30px;
-        float: right;
     }
 }
 
@@ -134,17 +125,9 @@
 
 /* Responsive */
 
-@media screen and (min-width: 360px) {
-
-    .header-container {
-        width: 360px;
-    }
-}
-
 @media screen and (min-width: 361px) and (max-width: 1024px) {
 
     .header-container {
-        width: 1024px;
         height: 97px;
     }
 
@@ -155,30 +138,39 @@
         margin-left: 21px;
     }
 
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
     .hamburger-bar {
         display: none;
     }
 
     .navbar {
-
         &-images {
+            position: absolute;
             width: 24px;
             height: 24px;
             margin-top: 45px;
-            margin-right: 20px;
+            right: 10px;
         }
 
         &-links {
+            position: relative;
             display: flex;
             flex-direction: row;
             width: 410px;
+            /* ili da bude width:auto, sa auto se pomera kao wrap u red ispod nije fiksna duzina  */
             height: 97px;
-            left: 565px;
+            left: 0;
+            margin-right: 40px;
         }
     }
 
     #nav-links {
         display: inline-flex;
+        flex-wrap: wrap;
     }
 
     #nav-links-back {
@@ -219,14 +211,14 @@
     }
 
     .nav-link br {
-        display: none;
-
+        display: contents;
+        /*ovo proveriti*/
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) and (max-width: 2500px) {
+
     .header-container {
-        width: 1440px;
         height: 97px;
     }
 
@@ -237,30 +229,39 @@
         margin-left: 21px;
     }
 
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
     .hamburger-bar {
         display: none;
     }
 
     .navbar {
-
         &-images {
+            position: absolute;
             width: 24px;
             height: 24px;
             margin-top: 45px;
-            margin-right: 20px;
+            right: 10px;
         }
 
         &-links {
+            position: relative;
             display: flex;
             flex-direction: row;
             width: 410px;
+            /* ili da bude width:auto, sa auto se pomera kao wrap u red ispod nije fiksna duzina  */
             height: 97px;
-            left: 980px;
+            left: 0;
+            margin-right: 40px;
         }
     }
 
     #nav-links {
         display: inline-flex;
+        flex-wrap: wrap;
     }
 
     #nav-links-back {
@@ -301,7 +302,7 @@
     }
 
     .nav-link br {
-        display: none;
-
+        display: contents;
+        /*ovo proveriti*/
     }
 }
