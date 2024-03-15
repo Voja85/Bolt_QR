@@ -38,9 +38,8 @@
         width: 187px;
         height: 595px;
         margin-top: 0px;
-        left: 172px;
+        right: 0px;
         list-style: none;
-        z-index: 3;
     }
 }
 
@@ -50,6 +49,7 @@
     margin-top: 22px;
     margin-right: 7px;
     position: relative;
+
 }
 
 .close-button {
@@ -125,7 +125,7 @@
 
 /* Responsive */
 
-@media screen and (min-width: 361px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     .header-container {
         height: 97px;
@@ -136,11 +136,6 @@
         height: 39px;
         margin-top: 26px;
         margin-left: 21px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
     }
 
     .hamburger-bar {
@@ -155,22 +150,15 @@
             margin-top: 45px;
             right: 10px;
         }
-
-        &-links {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            width: 410px;
-            /* ili da bude width:auto, sa auto se pomera kao wrap u red ispod nije fiksna duzina  */
-            height: 97px;
-            left: 0;
-            margin-right: 40px;
-        }
     }
 
     #nav-links {
-        display: inline-flex;
-        flex-wrap: wrap;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 410px;
+        height: 97px;
+        margin-right: 40px;
     }
 
     #nav-links-back {
@@ -216,7 +204,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 2500px) {
+@media screen and (min-width: 1440px) and (max-width: 2500px) {
 
     .header-container {
         height: 97px;
@@ -227,11 +215,6 @@
         height: 39px;
         margin-top: 26px;
         margin-left: 21px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
     }
 
     .hamburger-bar {
@@ -246,22 +229,15 @@
             margin-top: 45px;
             right: 10px;
         }
-
-        &-links {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            width: 410px;
-            /* ili da bude width:auto, sa auto se pomera kao wrap u red ispod nije fiksna duzina  */
-            height: 97px;
-            left: 0;
-            margin-right: 40px;
-        }
     }
 
     #nav-links {
-        display: inline-flex;
-        flex-wrap: wrap;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 410px;
+        height: 97px;
+        margin-right: 40px;
     }
 
     #nav-links-back {
