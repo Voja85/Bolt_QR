@@ -43,6 +43,8 @@
     }
 
     &-checkbox {
+        /*  sing_up_error  */
+        /*  log_in.html  */
         height: 50px;
         position: relative;
         display: flex;
@@ -68,8 +70,8 @@
         box-shadow: -2px -2px 10px 0px $darkorange inset;
         cursor: pointer;
 
-        /*  log_in.html  */
         &-log {
+            /*  log_in.html  */
             width: 198px;
             height: 56px;
             margin-top: -10px;
@@ -87,8 +89,8 @@
             cursor: pointer;
         }
 
-        /*  lost_password.html  */
         &-lost {
+            /*  lost_password.html  */
             width: 198px;
             height: 56px;
             margin-top: 18px;
@@ -107,8 +109,8 @@
         }
     }
 
-    /*  log_in.html  */
     &-links {
+        /*  log_in.html  */
         margin-top: 30px;
         margin-bottom: 40px;
     }
@@ -126,9 +128,9 @@
     &-text {
         margin-top: 30px;
 
-        /*  log_in.html  */
-        /*  sing_up.html  */
         &-login {
+            /*  log_in.html  */
+            /*  sing_up.html  */
             color: $orange;
             text-decoration: underline;
             font-family: 'TarabaComfortaa';
@@ -152,11 +154,11 @@
         letter-spacing: 0em;
         text-align: left;
         letter-spacing: 0em;
-        margin-left: 15px;
+        margin-left: 5px;
         z-index: 0;
 
-        /*  sing_up_error.html  */
         &-error {
+            /*  sing_up_error.html */
             width: 285px;
             height: 48px;
             font-family: 'Roboto';
@@ -166,17 +168,21 @@
             line-height: 16px;
             letter-spacing: 0em;
             text-align: left;
+            margin-left: 5px;
             letter-spacing: 0em;
-            margin-left: -3px;
             z-index: 0;
         }
 
-        /*  log_in.html  */
         &-desc {
+            /*  log_in.html  */
             margin-top: 4px;
-            padding-left: -3px;
+            margin-left: 5px;
         }
     }
+}
+
+.box {
+    margin-right: 5px;
 }
 
 input[type=text] {
@@ -229,21 +235,16 @@ input[type=checkbox] {
         &-container {
             display: flex;
             justify-content: space-around;
-            width: 100%;
             height: 679px;
             padding-left: 76px;
 
             &-illustration {
                 display: block;
                 margin-top: 75px;
+                margin-right: 20px;
                 width: 437px;
                 height: 437px;
             }
-        }
-
-        &-form {
-            display: flex;
-            flex-direction: column;
         }
 
         &-heading {
@@ -251,107 +252,21 @@ input[type=checkbox] {
 
             &-text {
 
+                &-resend {
+                    width: 510px;
+                }
+
                 br {
                     display: none;
                 }
             }
         }
 
-        &-checkbox {
-            height: 50px;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            padding-left: 1px;
-            margin-top: 16px;
-        }
-
-        &-btn {
-            width: 198px;
-            height: 56px;
-            margin-top: 15px;
-            margin-left: 1px;
-            font-family: 'TarabaComfortaa';
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17.01px;
-            letter-spacing: 0em;
-            border-radius: 15px;
-            color: $white;
-            background-color: $orange;
-            border: $darkorange;
-            box-shadow: -2px -2px 10px 0px $darkorange inset;
-            cursor: pointer;
-
-            /*  log_in.html  */
-            &-log {
-                width: 198px;
-                height: 56px;
-                margin-top: -10px;
-                margin-left: 1px;
-                font-family: 'TarabaComfortaa';
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 17.01px;
-                letter-spacing: 0em;
-                border-radius: 15px;
-                color: $white;
-                background-color: $orange;
-                border: $darkorange;
-                box-shadow: -2px -2px 10px 5px $darkorange inset;
-                cursor: pointer;
-            }
-
-            /*  lost_password.html  */
-            &-lost {
-                width: 198px;
-                height: 56px;
-                margin-top: 18px;
-                margin-left: 1px;
-                font-family: 'TarabaComfortaa';
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 17.01px;
-                letter-spacing: 0em;
-                border-radius: 15px;
-                color: $white;
-                background-color: $orange;
-                border: $darkorange;
-                box-shadow: -2px -2px 10px 5px $darkorange inset;
-                cursor: pointer;
-            }
-        }
-
-        /*  log_in.html  */
-        &-links {
-            margin-top: 30px;
-            margin-bottom: 40px;
-        }
-
-        &-links a {
-            font-family: 'TarabaComfortaa';
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0em;
-            color: $orange;
-            padding-right: 20px;
-        }
-
         &-text {
             margin-top: 30px;
 
-            /*  log_in.html  */
-            /*  sing_up.html  */
             &-login {
-                color: $orange;
                 margin-bottom: 50px;
-                text-decoration: underline;
-                font-family: 'TarabaComfortaa';
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 17.01px;
-                cursor: pointer;
             }
         }
     }
@@ -359,37 +274,12 @@ input[type=checkbox] {
     .checkbox {
         &-text {
             width: 360px;
-            height: 48px;
-            font-family: 'Roboto';
-            color: $lightgrey;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16px;
-            letter-spacing: 0em;
-            text-align: left;
-            letter-spacing: 0em;
-            margin-left: 5px;
-            z-index: 0;
 
-            /*  sing_up_error.html  */
             &-error {
-                width: 285px;
-                height: 48px;
-                font-family: 'Roboto';
-                color: $red;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 16px;
-                letter-spacing: 0em;
-                text-align: left;
-                letter-spacing: 0em;
-                margin-left: -3px;
-                z-index: 0;
+                width: 360px;
             }
 
-            /*  log_in.html  */
             &-desc {
-                margin-top: 4px;
                 padding-left: -3px;
             }
         }
@@ -397,74 +287,39 @@ input[type=checkbox] {
 
     input[type=text] {
         width: 392px;
-        height: 47px;
-        border: 1px solid $blackgrey;
-        border-radius: 15px;
-        font-size: 17px;
-        font-weight: 300;
-        color: $darkgrey;
-        background-color: $white;
-        margin-top: 15px;
-        padding-left: 17px;
-        font-family: 'TarabaComfortaa';
-
-        &::placeholder {
-            /* log_in.html */
-            color: $darkgrey;
-            font-family: 'TarabaComfortaa';
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17.01px;
-        }
-
-        &::-moz-placeholder {
-            /* log_in.html */
-            color: $darkgrey;
-            font-family: 'TarabaComfortaa';
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17.01px;
-        }
-    }
-
-    input[type=checkbox] {
-        position: absolute;
-        margin-top: 0px;
-        width: 24.5px;
-        height: 24.5px;
-        margin-left: 0.25px;
-        z-index: -2;
-        outline: $red;
     }
 }
 
-@media screen and (min-width: 1439px) and (max-width: 2500px) {
+@media screen and (min-width: 1440px) and (max-width: 2500px) {
 
     .section {
         &-container {
             display: flex;
             justify-content: space-around;
-            width: 100%;
-            height: 679px;
-            padding-left: 76px;
+            height: 710px;
+            padding-left: 156px;
 
             &-illustration {
                 display: block;
                 margin-top: 75px;
-                width: 437px;
-                height: 437px;
+                margin-right: 20px;
+                width: 520px;
+                height: 520px;
             }
         }
 
-        &-form {
-            display: flex;
-            flex-direction: column;
-        }
-
         &-heading {
-            padding-top: 75px;
+            padding-top: 84px;
+            font-size: 43.95px;
+            line-height: 53.4px;
 
             &-text {
+                font-size: 18px;
+                line-height: 21.09px;
+
+                &-resend {
+                    width: 510px;
+                }
 
                 br {
                     display: none;
@@ -472,183 +327,80 @@ input[type=checkbox] {
             }
         }
 
-        &-checkbox {
-            height: 50px;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            padding-left: 1px;
-            margin-top: 16px;
-        }
-
         &-btn {
-            width: 198px;
-            height: 56px;
+            width: 233.13px;
+            height: 55.35px;
             margin-top: 15px;
-            margin-left: 1px;
-            font-family: 'TarabaComfortaa';
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17.01px;
-            letter-spacing: 0em;
-            border-radius: 15px;
-            color: $white;
-            background-color: $orange;
-            border: $darkorange;
-            box-shadow: -2px -2px 10px 0px $darkorange inset;
-            cursor: pointer;
+            font-size: 18px;
+            line-height: 21.87px;
 
-            /*  log_in.html  */
+            &-text {
+                margin-top: 30px;
+
+                &-login {
+                    margin-bottom: 50px;
+                }
+            }
+
             &-log {
-                width: 198px;
-                height: 56px;
-                margin-top: -10px;
-                margin-left: 1px;
-                font-family: 'TarabaComfortaa';
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 17.01px;
-                letter-spacing: 0em;
-                border-radius: 15px;
-                color: $white;
-                background-color: $orange;
-                border: $darkorange;
-                box-shadow: -2px -2px 10px 5px $darkorange inset;
-                cursor: pointer;
+                font-size: 18px;
+                line-height: 21.87px;
             }
-
-            /*  lost_password.html  */
-            &-lost {
-                width: 198px;
-                height: 56px;
-                margin-top: 18px;
-                margin-left: 1px;
-                font-family: 'TarabaComfortaa';
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 17.01px;
-                letter-spacing: 0em;
-                border-radius: 15px;
-                color: $white;
-                background-color: $orange;
-                border: $darkorange;
-                box-shadow: -2px -2px 10px 5px $darkorange inset;
-                cursor: pointer;
-            }
-        }
-
-        /*  log_in.html  */
-        &-links {
-            margin-top: 30px;
-            margin-bottom: 40px;
-        }
-
-        &-links a {
-            font-family: 'TarabaComfortaa';
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0em;
-            color: $orange;
-            padding-right: 20px;
         }
 
         &-text {
+            font-size: 18px;
             margin-top: 30px;
 
-            /*  log_in.html  */
-            /*  sing_up.html  */
             &-login {
-                color: $orange;
-                margin-bottom: 50px;
-                text-decoration: underline;
-                font-family: 'TarabaComfortaa';
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 17.01px;
-                cursor: pointer;
+                font-size: 18px;
+                line-height: 21.87px;
             }
+        }
+
+        &-links a {
+            font-size: 18px;
+            line-height: 21.87px;
         }
     }
 
     .checkbox {
         &-text {
-            width: 360px;
-            height: 48px;
-            font-family: 'Roboto';
-            color: $lightgrey;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16px;
-            letter-spacing: 0em;
-            text-align: left;
-            letter-spacing: 0em;
-            margin-left: 5px;
-            z-index: 0;
+            width: 438px;
+            height: 42px;
+            font-size: 18px;
+            line-height: 21.09px;
+            margin-top: -2px;
+            text-align: justify;
 
-            /*  sing_up_error.html  */
             &-error {
-                width: 285px;
-                height: 48px;
-                font-family: 'Roboto';
-                color: $red;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 16px;
-                letter-spacing: 0em;
-                text-align: left;
-                letter-spacing: 0em;
-                margin-left: -3px;
-                z-index: 0;
+                width: 438px;
+                font-size: 18px;
+                line-height: 21.09px;
+                margin-top: -2px;
             }
 
-            /*  log_in.html  */
             &-desc {
-                margin-top: 4px;
+                margin-top: 0.5px;
                 padding-left: -3px;
+                font-size: 18px;
+                line-height: 21.09px;
             }
         }
     }
 
     input[type=text] {
-        width: 392px;
-        height: 47px;
-        border: 1px solid $blackgrey;
-        border-radius: 15px;
-        font-size: 17px;
-        font-weight: 300;
-        color: $darkgrey;
-        background-color: $white;
-        margin-top: 15px;
-        padding-left: 17px;
-        font-family: 'TarabaComfortaa';
+        width: 548px;
+        height: 51px;
 
         &::placeholder {
-            /* log_in.html */
-            color: $darkgrey;
-            font-family: 'TarabaComfortaa';
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17.01px;
+            font-size: 18px;
+            line-height: 21.87px;
         }
 
         &::-moz-placeholder {
-            /* log_in.html */
-            color: $darkgrey;
-            font-family: 'TarabaComfortaa';
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17.01px;
+            font-size: 18px;
+            line-height: 21.87px;
         }
-    }
-
-    input[type=checkbox] {
-        position: absolute;
-        margin-top: 0px;
-        width: 24.5px;
-        height: 24.5px;
-        margin-left: 0.25px;
-        z-index: -2;
-        outline: $red;
     }
 }

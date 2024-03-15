@@ -149,7 +149,7 @@
     }
 }
 
-/* Responsive */
+/* RESPONSIVE */
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
@@ -175,20 +175,8 @@
         }
 
         &-links {
-            display: flex;
-            flex-direction: row;
-            height: 50px;
             margin-top: 10px;
-            margin-bottom: 25px;
             margin-right: 100px;
-        }
-
-        &-link {
-            width: 44.02px;
-            height: 44.02px;
-            padding: 0 5px;
-            border-radius: 10px;
-            margin-bottom: 40px;
         }
 
         &-mixing {
@@ -318,14 +306,6 @@
             margin-bottom: 5px;
             text-decoration: underline;
             width: 142px;
-        }
-
-        &-linked {
-            font-family: 'TarabaComfortaa';
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 19.44px;
-            color: $darkgrey;
         }
     }
 }
@@ -353,20 +333,8 @@
         }
 
         &-links {
-            display: flex;
-            flex-direction: row;
-            height: 50px;
             margin-top: 10px;
-            margin-bottom: 25px;
             margin-right: 100px;
-        }
-
-        &-link {
-            width: 44.02px;
-            height: 44.02px;
-            padding: 0 5px;
-            border-radius: 10px;
-            margin-bottom: 40px;
         }
 
         &-mixing {
@@ -459,7 +427,6 @@
 
             &-short {
                 display: block;
-                font-family: 'Roboto';
                 width: 190px;
                 height: 10px;
                 font-size: 8px;
@@ -485,7 +452,6 @@
             color: $orange;
             width: 160px;
             text-align: left;
-            margin-top: 0;
             margin-bottom: 10px;
         }
 
@@ -498,15 +464,6 @@
             margin-bottom: 5px;
             text-decoration: underline;
             width: 142px;
-
-        }
-
-        &-linked {
-            font-family: 'TarabaComfortaa';
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 19.44px;
-            color: $darkgrey;
         }
     }
 }

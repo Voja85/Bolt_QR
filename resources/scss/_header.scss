@@ -123,7 +123,7 @@
     margin-top: 30px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
@@ -200,7 +200,7 @@
 
     .nav-link br {
         display: contents;
-        /*ovo proveriti*/
+        /*ovo proveriti, jer i sa none ili contents nestaje razmak a treba da bude*/
     }
 }
 
@@ -279,6 +279,6 @@
 
     .nav-link br {
         display: contents;
-        /*ovo proveriti*/
+        /*ovo proveriti, jer i sa none ili contents nestaje razmak a treba da bude*/
     }
 }
