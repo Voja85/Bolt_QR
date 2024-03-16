@@ -3,7 +3,7 @@
 @import "_header";
 @import "_footer";
 @import "_fonts";
-@import "_responsive";
+@import "_responsive_sing_up";
 
 
 .section {
@@ -49,6 +49,7 @@
         flex-direction: row;
         padding-left: 1px;
         margin-top: 16px;
+        z-index: 0;
     }
 
     &-btn {
@@ -216,4 +217,182 @@ input[type=checkbox] {
     margin-left: 0.25px;
     z-index: -2;
     outline: $red;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .section {
+        &-container {
+            display: flex;
+            justify-content: space-around;
+            height: 679px;
+            padding-left: 76px;
+
+            &-illustration {
+                display: block;
+                margin-top: 75px;
+                margin-right: 20px;
+                width: 437px;
+                height: 437px;
+            }
+        }
+
+        &-heading {
+            padding-top: 75px;
+
+            &-text {
+
+                &-resend {
+                    width: 510px;
+                }
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        &-text {
+            margin-top: 30px;
+
+            &-login {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .checkbox {
+        &-text {
+            width: 360px;
+
+            &-error {
+                width: 360px;
+            }
+
+            &-desc {
+                padding-left: -3px;
+            }
+        }
+    }
+
+    input[type=text] {
+        width: 392px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .section {
+        &-container {
+            display: flex;
+            justify-content: space-around;
+            height: 710px;
+            padding-left: 150px;
+
+            &-illustration {
+                display: block;
+                margin-top: 75px;
+                margin-right: 20px;
+                width: 520px;
+                height: 520px;
+            }
+        }
+
+        &-heading {
+            padding-top: 84px;
+            font-size: 43.95px;
+            line-height: 53.4px;
+
+            &-text {
+                font-size: 18px;
+                line-height: 21.09px;
+
+                &-resend {
+                    width: 510px;
+                }
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        &-btn {
+            width: 233.13px;
+            height: 55.35px;
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 21.87px;
+
+            &-text {
+                margin-top: 30px;
+
+                &-login {
+                    margin-bottom: 50px;
+                }
+            }
+
+            &-log {
+                font-size: 18px;
+                line-height: 21.87px;
+            }
+        }
+
+        &-text {
+            font-size: 18px;
+            margin-top: 30px;
+
+            &-login {
+                font-size: 18px;
+                line-height: 21.87px;
+            }
+        }
+
+        &-links a {
+            font-size: 18px;
+            line-height: 21.87px;
+        }
+    }
+
+    .checkbox {
+        &-text {
+            width: 438px;
+            height: 42px;
+            font-size: 18px;
+            line-height: 21.09px;
+            margin-top: -2px;
+            text-align: justify;
+
+            &-error {
+                width: 438px;
+                font-size: 18px;
+                line-height: 21.09px;
+                margin-top: -2px;
+            }
+
+            &-desc {
+                margin-top: 0.5px;
+                padding-left: -3px;
+                font-size: 18px;
+                line-height: 21.09px;
+            }
+        }
+    }
+
+    input[type=text] {
+        width: 548px;
+        height: 51px;
+
+        &::placeholder {
+            font-size: 18px;
+            line-height: 21.87px;
+        }
+
+        &::-moz-placeholder {
+            font-size: 18px;
+            line-height: 21.87px;
+        }
+    }
 }

@@ -2,7 +2,8 @@
 @import "_base";
 @import "_header";
 @import "_footer";
-@import "fonts";
+@import "_fonts";
+@import "_responsive_home";
 
 
 .section {
@@ -204,6 +205,7 @@
         height: auto;
         background-color: $greywhite30;
         padding-bottom: 20px;
+        padding-top: 71px;
 
         &-btn {
             width: 104px;
@@ -256,7 +258,6 @@
 
             &-topic {
                 position: absolute;
-                width: 100%;
                 padding-top: 20px;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -280,9 +281,9 @@
     margin-bottom: 20px;
 
     &-text {
-        padding-left: 9px;
+        width: 100%;
+        padding-left: 8px;
         padding-top: 10px;
-        width: 350px;
         height: 96px;
         margin-bottom: 15px;
     }
@@ -506,5 +507,190 @@
             line-height: 16.41px;
             margin-bottom: 7px;
         }
+    }
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .container {
+        &-fourth {
+            padding-top: 71px;
+
+            &-life {
+                display: flex;
+                justify-content: end;
+                margin-right: 20px;
+                margin-bottom: 60px;
+            }
+        }
+
+        &-fifth {
+
+            &-section {
+                position: absolute;
+                width: 100%;
+                height: 654px;
+                background: rgba(255, 207, 155, 1);
+                opacity: 0.1;
+
+                &-topic {
+                    position: absolute;
+                    padding-top: 20px;
+                    padding-left: 21px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    .heading-title {
+        &-main {
+            margin-left: 24px;
+        }
+    }
+
+    .content {
+        &-items {
+            margin-top: 40px;
+            padding-left: 171px;
+        }
+    }
+
+    .subtitle {
+
+        &-text {
+            padding-left: 24px;
+            width: 415px;
+        }
+    }
+
+}
+
+.swiper {
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2px;
+
+        &-box {
+            position: relative;
+            height: 50px;
+            background: $lightocher1;
+
+            & p {
+                color: $white;
+            }
+        }
+    }
+
+    &-slide {
+        background: linear-gradient(167.91deg, $lightestocher -1.62%, $lightwhite 104.93%);
+        margin-left: 2px;
+        margin-right: 0px;
+
+        &-main {
+            margin-top: -50px;
+            margin-right: 0px;
+            z-index: 1;
+        }
+    }
+
+    &-text {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        &-fourth {
+            padding-top: 102px;
+
+            &-life {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                margin-right: 20px;
+                margin-bottom: 60px;
+            }
+        }
+
+        &-fifth {
+
+            &-section {
+                position: absolute;
+                width: 100%;
+                height: 654px;
+                background: rgba(255, 207, 155, 1);
+                opacity: 0.1;
+
+                &-topic {
+                    position: absolute;
+                    padding-top: 20px;
+                    padding-left: 21px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    .heading-title {
+        &-main {
+            margin-left: 24px;
+        }
+    }
+
+    .content {
+        &-items {
+            margin-top: 40px;
+            padding-left: 171px;
+        }
+    }
+
+    .subtitle {
+
+        &-text {
+            padding-left: 24px;
+            width: 415px;
+        }
+    }
+
+}
+
+.swiper {
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2px;
+
+        &-box {
+            position: relative;
+            height: 50px;
+            background: $lightocher1;
+
+            & p {
+                color: $white;
+            }
+        }
+    }
+
+    &-slide {
+        background: linear-gradient(167.91deg, $lightestocher -1.62%, $lightwhite 104.93%);
+        margin-left: 2px;
+        margin-right: 0px;
+
+        &-main {
+            margin-top: -50px;
+            margin-right: 0px;
+            z-index: 1;
+        }
+    }
+
+    &-text {
+        margin-top: 10px;
     }
 }
