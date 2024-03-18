@@ -61,7 +61,7 @@
     }
 }
 
-.central img {
+.central {
     width: 217px;
     height: 217px;
     margin: auto;
@@ -70,26 +70,37 @@
     margin-bottom: 40px;
 }
 
-.heading-title {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    align-items: baseline;
+.heading {
 
-    img {
-        margin-right: 10px;
-        width: 22px;
-        height: 22px;
+    &-title {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        align-items: baseline;
+
+        img {
+            margin-right: 10px;
+            width: 22px;
+            height: 22px;
+        }
+
+        &-main {
+            font-size: 34.18px;
+            line-height: 41.53px;
+            font-weight: 900;
+            color: $darkgrey;
+            font-family: 'TarabaComfortaa';
+            margin-left: 9px;
+            padding-top: 20px;
+        }
     }
 
-    &-main {
+    &-qr {
         font-size: 34.18px;
         line-height: 41.53px;
         font-weight: 900;
-        color: $darkgrey;
+        color: $black;
         font-family: 'TarabaComfortaa';
-        margin-left: 9px;
-        padding-top: 20px;
     }
 }
 
@@ -524,6 +535,40 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
+    .section {
+        &-code {
+            display: flex;
+            flex-direction: row;
+            padding-left: 8px;
+        }
+
+        &-container-first {
+            width: 100%;
+            background-color: $light_greywhite;
+            padding-top: 42px;
+            padding-left: 0;
+
+            &-videos {
+                background-color: $light_greywhite;
+            }
+        }
+    }
+
+    .central {
+        width: 382px;
+        height: 383px;
+        margin-left: 100px;
+        margin-top: 0;
+    }
+
+    .hero {
+        width: 407px;
+
+        br {
+            display: none;
+        }
+    }
+
     .container {
 
         &-fourth {
@@ -570,10 +615,18 @@
         }
     }
 
-    .heading-title {
+    .heading {
+        &-title {
 
-        &-main {
-            margin-left: 24px;
+            &-main {
+                margin-left: 24px;
+            }
+        }
+
+        &-qr {
+            br {
+                display: none;
+            }
         }
     }
 
