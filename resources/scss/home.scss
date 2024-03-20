@@ -202,7 +202,6 @@
         margin-left: 15px;
         margin-top: 15px;
         margin-bottom: 25px;
-
     }
 }
 
@@ -340,11 +339,14 @@
     }
 }
 
-.boxes-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+.boxes {
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }
 
 .box {
@@ -554,6 +556,24 @@
             line-height: 16.41px;
             margin-bottom: 7px;
         }
+
+        &-line {
+            margin-top: 10px;
+
+            p {
+                font-family: 'Roboto';
+                text-decoration: line-through;
+                color: $lightgrey;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.41px;
+                margin-bottom: 7px;
+            }
+
+            p:first-of-type {
+                text-decoration: none;
+            }
+        }
     }
 }
 
@@ -631,7 +651,6 @@
         &-heading {
 
             &-text {
-
 
                 br {
                     display: none;
@@ -824,6 +843,7 @@
 @media screen and (min-width: 1440px) {
 
     .section {
+
         &-code {
             display: flex;
             flex-direction: row;
@@ -834,7 +854,6 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: -40px;
-
             }
         }
 
@@ -879,14 +898,13 @@
                                 line-height: 21.09px;
                                 width: 546px;
                             }
-
-
                         }
                     }
                 }
             }
 
             &-second {
+
                 &-videos {
                     display: flex;
                     flex-direction: row;
@@ -951,7 +969,6 @@
     }
 
     .hero {
-
         width: 547px;
         font-size: 69px;
         line-height: 83px;
@@ -983,7 +1000,6 @@
                 font-size: 18px;
                 line-height: 21.09px;
                 width: 463px;
-
             }
         }
 
@@ -994,26 +1010,29 @@
 
         &-fourth {
             padding-top: 71px;
+            padding-bottom: 100px;
 
             &-life {
                 display: flex;
                 justify-content: end;
-                margin-right: 20px;
+                margin-right: 40px;
+                margin-top: 20px;
                 margin-bottom: 60px;
             }
 
             &-btn {
-                width: 143px;
-                height: 42px;
+                width: 200px;
+                height: 51px;
+                font-size: 18px;
+                line-height: 21.09px;
 
                 &-blank {
-                    width: 143px;
-                    height: 42px;
+                    margin-left: 30px;
+                    width: 200px;
+                    height: 51px;
+                    font-size: 18px;
+                    line-height: 21.09px;
                 }
-            }
-
-            &-life {
-                margin-top: 20px;
             }
         }
 
@@ -1047,7 +1066,11 @@
             }
 
             &-main {
-                margin-left: 24px;
+                margin-left: 41px;
+                font-family: 'TarabaComfortaa';
+                font-size: 43.95px;
+                font-weight: 900;
+                line-height: 53.4px;
             }
         }
 
@@ -1061,7 +1084,6 @@
                 width: 495px;
                 font-size: 18px;
                 line-height: 21.78px;
-
             }
 
             br {
@@ -1138,13 +1160,16 @@
         padding-top: 20px;
 
         &-text {
-            padding-left: 24px;
-            width: 430px;
+            padding-left: 41px;
+            width: 540px;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.09px;
         }
     }
 
     .subheading_1 {
-
         font-family: 'TarabaComfortaa';
         font-size: 35.16px;
         font-weight: 700;
@@ -1172,6 +1197,10 @@
             width: 316px;
             height: 693px;
 
+            hr {
+                display: none;
+            }
+
             &-box {
                 margin-left: 50px;
                 background: linear-gradient($lightocher1 17.19%, $lightwhite 100%);
@@ -1196,11 +1225,19 @@
                 width: 316px;
                 height: 693px;
                 padding-top: 35px;
+
+                hr {
+                    margin-top: -15px;
+                    width: 180px;
+                }
             }
 
             &-title {
                 font-size: 18px;
                 line-height: 21.87px;
+                text-decoration: underline;
+                text-decoration-style: 1 px solid $lightgrey;
+                margin-bottom: 25px;
             }
         }
 
@@ -1212,6 +1249,17 @@
                 line-height: 21.09px;
                 margin-bottom: 15px;
             }
+
+            &-line {
+                margin-top: 10px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 21.09px;
+                    margin-bottom: 15px;
+                }
+            }
+
         }
 
         &-heading {
