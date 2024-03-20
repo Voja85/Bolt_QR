@@ -1048,8 +1048,18 @@
                 &-topic {
                     position: absolute;
                     padding-top: 20px;
-                    padding-left: 21px;
+                    padding-left: 35px;
                     padding-right: 10px;
+
+                    &-text {
+                        font-size: 43.95px;
+                        line-height: 53.4px;
+
+                        &-quest {
+                            font-size: 18px;
+                            line-height: 21.09px;
+                        }
+                    }
                 }
             }
         }
@@ -1150,6 +1160,21 @@
         &-items {
             margin-top: 40px;
             padding-left: 171px;
+        }
+
+        &-title {
+            font-size: 22.05px;
+            line-height: 26.79px;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 21.09px;
+            width: 664px;
+
+            br {
+                display: none;
+            }
         }
     }
 
