@@ -2,7 +2,7 @@
 @import "_base";
 @import "_header";
 @import "_footer";
-@import "fonts";
+@import "_fonts";
 
 .container {
     width: 100%;
@@ -835,4 +835,59 @@
     font-size: 12px;
     font-weight: 300;
     line-height: 14px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 70px;
+
+        &-social {
+            width: 40%;
+            margin-left: 24px;
+        }
+
+        &-colors {
+            width: 60%;
+
+            &-frame {
+                height: 700px;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-auto-flow: autos;
+                border: 1px solid $lightgreyline;
+                border-radius: 10px;
+                padding: 20px 20px 40px 10px;
+                margin-right: 25px;
+
+            }
+        }
+
+        &-items {
+            border: 1px solid $orange;
+
+            &-empty {
+                border: 1px solid $orange;
+                color: $darkgrey;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
